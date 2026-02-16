@@ -16,14 +16,33 @@ export default function Sobre() {
               Aldo Santos Group
             </h1>
             <p className="text-xl md:text-2xl opacity-95">
-              Consultoria especializada em otimização de operações de TI através de Inteligência Artificial e automação de processos
+              Consultoria de TI & Gestão de Projetos com Especialização em Inteligência Artificial
             </p>
           </div>
         </div>
       </section>
 
+      {/* Perfil Híbrido */}
+      <section className="py-12 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-blue-50 border-l-4 border-primary p-8 mb-12">
+              <h2 className="text-3xl font-heading font-bold mb-4">Perfil Híbrido Raro no Mercado</h2>
+              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                A maioria dos gerentes de projeto não tem capacidade técnica hands-on. 
+                A maioria dos especialistas em IA não tem experiência gerenciando operações críticas de milhões.
+              </p>
+              <p className="text-xl text-gray-700 font-bold leading-relaxed">
+                Aldo Santos Group combina os dois mundos: 20 anos de gestão sênior + expertise técnica 
+                profunda em IA implementada em produção.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* História */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-bg-light">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="mb-8">História</h2>

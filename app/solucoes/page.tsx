@@ -14,16 +14,28 @@ export default function Solucoes() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading font-bold mb-6">
-              Soluções Proprietárias
+              Ferramentas e Soluções Proprietárias
             </h1>
-            <p className="text-xl md:text-2xl mb-8 opacity-95">
-              Ferramentas e produtos desenvolvidos para acelerar resultados e garantir qualidade desde o primeiro dia
+            <p className="text-xl md:text-2xl mb-8 opacity-95 max-w-4xl mx-auto">
+              Ao longo de 20 anos liderando projetos críticos, desenvolvi um arsenal de ferramentas 
+              e soluções que aceleram implementação e garantem qualidade. Estas são utilizadas 
+              dentro dos nossos serviços de consultoria, adaptadas para cada contexto específico.
             </p>
-            <p className="text-lg opacity-90 max-w-3xl mx-auto">
-              Nossas soluções proprietárias aceleram a implementação e garantem resultados desde o primeiro dia. 
-              Desenvolvidas com base em 20 anos de experiência em projetos críticos, estas ferramentas resolvem 
-              as dores mais comuns de empresas de TI.
-            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Disclaimer */}
+      <section className="py-8 bg-white">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-blue-50 border-l-4 border-primary p-6">
+              <p className="text-gray-700 text-lg">
+                <strong>Importante:</strong> Estas soluções não são vendidas como produtos separados. 
+                Elas fazem parte da nossa metodologia de consultoria e são customizadas para cada cliente 
+                durante a execução dos projetos.
+              </p>
+            </div>
           </div>
         </div>
       </section>

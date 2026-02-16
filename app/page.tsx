@@ -13,12 +13,15 @@ export default function Home() {
             <h1 className="font-heading font-bold mb-6">
               Aldo Santos Group
             </h1>
-            <p className="text-2xl md:text-3xl mb-8 font-semibold opacity-95">
-              Consultoria Especializada em Otimização de Operações de TI com Inteligência Artificial
+            <p className="text-2xl md:text-3xl mb-4 font-semibold opacity-95">
+              Consultoria de TI & Gestão de Projetos
+            </p>
+            <p className="text-xl md:text-2xl mb-8 font-medium opacity-90">
+              Projetos Estratégicos Sem Expandir Headcount
             </p>
             <p className="text-lg md:text-xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Transformamos processos manuais em operações automatizadas e eficientes. Com 20+ anos de experiência 
-              liderando projetos críticos para empresas de referência, entregamos resultados mensuráveis desde o primeiro dia.
+              Capacidade sênior sob demanda para empresas de TI, consultorias e fábricas de software. Gestão de projetos críticos, 
+              arquitetura de soluções e automação com IA. 20+ anos entregando resultados mensuráveis em Energia, Financeiro, Saúde e Logística.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
@@ -44,10 +47,9 @@ export default function Home() {
             <h2 className="text-center mb-12">Sobre o Grupo</h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong className="text-dark">Aldo Santos Group</strong> é uma consultoria especializada em otimização de operações de TI 
-                através de Inteligência Artificial e automação de processos. Com mais de 20 anos de experiência liderando projetos 
-                críticos para empresas de referência nos setores de Energia, Financeiro, Saúde e Logística, entregamos resultados 
-                mensuráveis desde o primeiro dia.
+                <strong className="text-dark">Aldo Santos Group</strong> é uma consultoria especializada em gestão de projetos de TI 
+                e transformação de operações. Com expertise profunda em IA e automação, resolvemos as dores mais urgentes de empresas 
+                de tecnologia: projetos críticos sem liderança sênior, processos manuais insustentáveis e falta de capacidade técnica especializada.
               </p>
               <p>
                 Nossa abordagem combina gestão sênior de projetos com expertise técnica hands-on em IA - um perfil raro no mercado. 
@@ -58,6 +60,59 @@ export default function Home() {
               <p>
                 Trabalhamos com empresas de TI, consultorias e fábricas de software que precisam de capacidade sênior sem comprometer 
                 orçamento, resolver gargalos operacionais críticos ou implementar IA de forma prática e rentável.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Como Trabalhamos */}
+      <section className="section-padding bg-bg-light">
+        <div className="container-custom">
+          <h2 className="text-center mb-4">Como Trabalhamos</h2>
+          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            Não somos consultoria genérica que entrega PowerPoint. Atuamos de forma estratégica 
+            ou hands-on, dependendo da necessidade. Resultado mensurável é garantia.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                1
+              </div>
+              <h3 className="font-heading font-semibold text-xl mb-3">Diagnóstico</h3>
+              <p className="text-gray-600">
+                1-2 semanas entendendo contexto, processos, dores reais e oportunidades de melhoria.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                2
+              </div>
+              <h3 className="font-heading font-semibold text-xl mb-3">Proposta Clara</h3>
+              <p className="text-gray-600">
+                Plano de ação com escopo, prazo, investimento e resultados esperados mensuráveis.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                3
+              </div>
+              <h3 className="font-heading font-semibold text-xl mb-3">Execução ou Mentoria</h3>
+              <p className="text-gray-600">
+                Posso executar direto, mentorar seu time ou atuar como gerente temporário. Você decide.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+                4
+              </div>
+              <h3 className="font-heading font-semibold text-xl mb-3">Resultados Mensuráveis</h3>
+              <p className="text-gray-600">
+                Entregas com métricas claras de sucesso. ROI demonstrado, não promessas vazias.
               </p>
             </div>
           </div>
@@ -87,39 +142,6 @@ export default function Home() {
               description="Gestão temporária de projetos críticos ou estruturação de processos de entrega. Assumimos projetos travados, restruturamos entregas e capacitamos seu time para autonomia."
               link="/pmo-as-service"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Soluções Proprietárias */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-center mb-4">Nossas Soluções Proprietárias</h2>
-          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Ferramentas e produtos desenvolvidos para acelerar resultados e garantir qualidade desde o primeiro dia
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            <SolutionCard
-              title="Base de Conhecimento RAG"
-              description="Sistema inteligente que centraliza toda documentação técnica e operacional da empresa. Sua equipe consulta como se fosse o especialista mais sênior, reduzindo onboarding de meses para semanas."
-            />
-            <SolutionCard
-              title="Chatbots Especializados"
-              description="Agentes de IA treinados para diferentes áreas: Negócios (POs, pré-venda), Gestão (diretores, gerentes), Desenvolvimento (times técnicos) e RH (bem-estar, recrutamento). Disponíveis 24/7."
-            />
-            <SolutionCard
-              title="Automações N8N"
-              description="Templates prontos de automação para processos críticos de TI: integração de sistemas, workflows de aprovação, dashboards em tempo real, alertas inteligentes. Implementação rápida."
-            />
-            <SolutionCard
-              title="Hub Produtividade Projetos"
-              description="Ferramentas e processos para aumentar eficiência de gestão de projetos: templates de documentação, checklists automatizados, métricas em tempo real, rituais otimizados."
-            />
-          </div>
-          <div className="text-center">
-            <Link href="/solucoes" className="btn btn-secondary text-lg px-8 py-4">
-              Ver Todas as Soluções
-            </Link>
           </div>
         </div>
       </section>
@@ -158,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Empresas/Clientes */}
-      <section className="section-padding bg-bg-light">
+      <section className="section-padding bg-white">
         <div className="container-custom">
           <h2 className="text-center mb-4">Experiência com Empresas de Referência</h2>
           <p className="text-center text-xl text-gray-600 mb-12">
@@ -174,6 +196,40 @@ export default function Home() {
                 <p className="font-semibold text-dark">{company}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ferramentas Que Usamos */}
+      <section className="section-padding bg-bg-light">
+        <div className="container-custom">
+          <h2 className="text-center mb-4">Ferramentas Que Usamos</h2>
+          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+            Soluções proprietárias desenvolvidas ao longo de 20 anos que aceleram a implementação e garantem resultados. 
+            Estas ferramentas são utilizadas dentro dos nossos serviços de consultoria, não vendidas separadamente.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <SolutionCard
+              title="Base de Conhecimento RAG"
+              description="Sistema inteligente que centraliza toda documentação técnica e operacional da empresa. Sua equipe consulta como se fosse o especialista mais sênior, reduzindo onboarding de meses para semanas."
+            />
+            <SolutionCard
+              title="Chatbots Especializados"
+              description="Agentes de IA treinados para diferentes áreas: Negócios (POs, pré-venda), Gestão (diretores, gerentes), Desenvolvimento (times técnicos) e RH (bem-estar, recrutamento). Disponíveis 24/7."
+            />
+            <SolutionCard
+              title="Automações N8N"
+              description="Templates prontos de automação para processos críticos de TI: integração de sistemas, workflows de aprovação, dashboards em tempo real, alertas inteligentes. Implementação rápida."
+            />
+            <SolutionCard
+              title="Hub Produtividade Projetos"
+              description="Ferramentas e processos para aumentar eficiência de gestão de projetos: templates de documentação, checklists automatizados, métricas em tempo real, rituais otimizados."
+            />
+          </div>
+          <div className="text-center">
+            <Link href="/solucoes" className="btn btn-secondary text-lg px-8 py-4">
+              Ver Todas as Soluções
+            </Link>
           </div>
         </div>
       </section>

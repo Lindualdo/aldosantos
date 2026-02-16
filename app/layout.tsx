@@ -4,9 +4,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Aldo Santos Group | Consultoria Especializada em IA e Automação',
-  description: 'Consultoria especializada em otimização de operações de TI com Inteligência Artificial. 20+ anos de experiência, resultados mensuráveis desde o primeiro dia.',
-  keywords: 'consultoria TI, inteligência artificial, automação de processos, gestão de projetos, PMO, transformação digital',
+  title: 'Aldo Santos Group | Consultoria de TI & Gestão de Projetos | Especialista em IA',
+  description: 'Consultoria sênior de TI com 20+ anos em gestão de projetos críticos. Especialista em IA, automação e transformação de operações para empresas de tecnologia. Capacidade sob demanda sem expandir headcount.',
+  keywords: 'consultoria TI, gestão de projetos, PMO, consultoria sênior, inteligência artificial, automação de processos, capacidade sob demanda',
   authors: [{ name: 'Aldo Santos' }],
   openGraph: {
     type: 'website',

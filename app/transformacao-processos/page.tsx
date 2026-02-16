@@ -15,7 +15,7 @@ export default function TransformacaoProcessos() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading font-bold mb-6">
-              Processos Manuais Drenando Produtividade e Orçamento?
+              Processos Manuais Custando Milhares por Mês?
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-95">
               Automatize operações críticas com IA e recupere até 60% do tempo produtivo da sua equipe em 90 dias.

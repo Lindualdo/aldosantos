@@ -211,6 +211,34 @@ export default function ArquiteturaSolucoesIA() {
                 </div>
               </div>
             </div>
+
+            <div className="card bg-blue-50 border-l-4 border-primary mt-8">
+              <h3 className="text-xl font-heading font-bold mb-4">Importante: Esta não é uma venda de produto pronto</h3>
+              <p className="text-gray-700 mb-4">É consultoria especializada que pode resultar em:</p>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span><strong>Solução implementada por nós</strong> - Você contrata, nós entregamos funcionando</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span><strong>Blueprint completo</strong> para seu time executar - Arquitetura, specs e orientações</span>
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-6 h-6 text-primary mr-2 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span><strong>Mentoria técnica</strong> durante implementação do seu time - Pair programming e code review</span>
+                </li>
+              </ul>
+              <p className="text-gray-700 mt-4 font-semibold">
+                Você escolhe o modelo que faz mais sentido para seu contexto e orçamento.
+              </p>
+            </div>
           </div>
         </div>
       </section>
