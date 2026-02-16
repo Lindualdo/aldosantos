@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="text-2xl font-heading font-bold text-primary hover:text-opacity-80 transition-colors">
-            Aldo Santos Group
+            Aldo Santos
           </Link>
 
           {/* Desktop Menu */}
@@ -51,12 +51,6 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/solucoes" className="text-dark hover:text-primary transition-colors font-medium">
-              Soluções
-            </Link>
-            <Link href="/blog" className="text-dark hover:text-primary transition-colors font-medium">
-              Blog
-            </Link>
             <Link href="/sobre" className="text-dark hover:text-primary transition-colors font-medium">
               Sobre
             </Link>
@@ -65,12 +59,12 @@ export default function Header() {
             </Link>
             
             <a 
-              href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita" 
+              href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
             >
-              Consultoria Gratuita
+              Agendar Conversa
             </a>
           </div>
 
@@ -107,12 +101,6 @@ export default function Header() {
                 PMO as a Service
               </Link>
             </div>
-            <Link href="/solucoes" className="block py-2 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
-              Soluções
-            </Link>
-            <Link href="/blog" className="block py-2 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
-              Blog
-            </Link>
             <Link href="/sobre" className="block py-2 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Sobre
             </Link>
@@ -120,12 +108,12 @@ export default function Header() {
               Contato
             </Link>
             <a 
-              href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita" 
+              href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary w-full mt-4"
             >
-              Consultoria Gratuita
+              Agendar Conversa
             </a>
           </div>
         )}

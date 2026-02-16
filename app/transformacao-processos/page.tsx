@@ -3,8 +3,8 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Transformação de Processos | Aldo Santos Group',
-  description: 'Automatize operações críticas com IA e recupere até 60% do tempo produtivo da sua equipe em 90 dias. ROI demonstrado em projetos reais.',
+  title: 'Transformação de Processos | Aldo Santos',
+  description: 'Implemento automação com IA que elimina trabalho manual e gera ROI demonstrado em 90 dias.',
 }
 
 export default function TransformacaoProcessos() {
@@ -18,7 +18,7 @@ export default function TransformacaoProcessos() {
               Processos Manuais Custando Milhares por Mês?
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-95">
-              Automatize operações críticas com IA e recupere até 60% do tempo produtivo da sua equipe em 90 dias.
+              Implemento automação com IA que elimina trabalho manual e gera ROI demonstrado em 90 dias.
             </p>
             <a 
               href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita sobre Transformação de Processos"
@@ -89,11 +89,11 @@ export default function TransformacaoProcessos() {
       {/* Solução */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-center mb-12">Como Resolvemos Isso</h2>
+          <h2 className="text-center mb-12">Como Resolvo Isso</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-700 mb-12 leading-relaxed text-center">
-              Mapeamos seus processos críticos, identificamos gargalos e implementamos automação inteligente com IA, 
-              N8N e integrações entre sistemas. Não vendemos teoria - entregamos soluções funcionando.
+              Mapeio seus processos críticos, identifico gargalos e implemento automação inteligente com IA, 
+              N8N e integrações entre sistemas. Não vendo teoria - entrego soluções funcionando.
             </p>
 
             <div className="space-y-8 mb-12">

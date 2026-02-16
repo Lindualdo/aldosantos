@@ -3,8 +3,8 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'PMO as a Service | Aldo Santos Group',
-  description: 'Gestão temporária ou consultoria estratégica para projetos críticos. Colocamos projetos travados no eixo e entregamos no prazo.',
+  title: 'PMO as a Service | Aldo Santos',
+  description: 'Atuo como gerente temporário de projetos críticos para colocar projetos travados no eixo e entregar no prazo.',
 }
 
 export default function PMOAsService() {

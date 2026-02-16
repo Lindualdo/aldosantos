@@ -4,24 +4,23 @@ export default function Footer() {
   return (
     <footer className="bg-dark text-white">
       <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl mx-auto">
           {/* Column 1: About */}
           <div>
-            <h3 className="text-2xl font-heading font-bold text-primary mb-4">
-              Aldo Santos Group
+            <h3 className="text-xl font-heading font-bold text-primary mb-4">
+              Aldo Santos
             </h3>
-            <p className="text-gray-300 mb-4">
-              Consultoria especializada em otimização de operações de TI com Inteligência Artificial e automação de processos.
-            </p>
             <p className="text-gray-300 text-sm">
-              20+ anos de experiência, resultados mensuráveis desde o primeiro dia.
+              Consultoria de TI & Gestão de Projetos<br/>
+              20+ anos de experiência<br/>
+              Especialista em IA & Automação
             </p>
           </div>
 
           {/* Column 2: Services */}
           <div>
-            <h4 className="text-lg font-heading font-semibold mb-4">Serviços</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg font-heading font-semibold mb-4 text-white">Serviços</h4>
+            <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/transformacao-processos" className="text-gray-300 hover:text-primary transition-colors">
                   Transformação de Processos
@@ -37,23 +36,6 @@ export default function Footer() {
                   PMO as a Service
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          {/* Column 3: Resources */}
-          <div>
-            <h4 className="text-lg font-heading font-semibold mb-4">Recursos</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-primary transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/solucoes" className="text-gray-300 hover:text-primary transition-colors">
-                  Soluções
-                </Link>
-              </li>
               <li>
                 <Link href="/sobre" className="text-gray-300 hover:text-primary transition-colors">
                   Sobre
@@ -67,10 +49,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Contact */}
+          {/* Column 3: Contact */}
           <div>
-            <h4 className="text-lg font-heading font-semibold mb-4">Contato</h4>
-            <ul className="space-y-3">
+            <h4 className="text-lg font-heading font-semibold mb-4 text-white">Contato</h4>
+            <ul className="space-y-2 text-sm">
               <li>
                 <a href="mailto:lindualdo@hotmail.com" className="text-gray-300 hover:text-primary transition-colors flex items-center">
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +78,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <p className="text-gray-400 text-sm mt-4">
+            <p className="text-gray-400 text-sm mt-4 pt-2">
               Lisboa, Portugal<br />
               Atendimento: Brasil e Europa
             </p>
@@ -104,18 +86,10 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Aldo Santos Group. Todos os direitos reservados.
+            © {new Date().getFullYear()} Aldo Santos. Todos os direitos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/politica-privacidade" className="text-gray-400 hover:text-primary text-sm transition-colors">
-              Política de Privacidade
-            </Link>
-            <Link href="/termos" className="text-gray-400 hover:text-primary text-sm transition-colors">
-              Termos de Uso
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

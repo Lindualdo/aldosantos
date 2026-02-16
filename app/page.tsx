@@ -1,78 +1,109 @@
 import Link from 'next/link'
-import ServiceCard from '@/components/ServiceCard'
-import SolutionCard from '@/components/SolutionCard'
 import CTASection from '@/components/CTASection'
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-blue-600 text-white section-padding">
+      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white section-padding">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-heading font-bold mb-6">
-              Aldo Santos Group
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
+              Aldo Santos
             </h1>
-            <p className="text-2xl md:text-3xl mb-4 font-semibold opacity-95">
+            <p className="text-2xl md:text-3xl font-semibold mb-6">
               Consultoria de TI & Gestão de Projetos
             </p>
-            <p className="text-xl md:text-2xl mb-8 font-medium opacity-90">
-              Projetos Estratégicos Sem Expandir Headcount
+            <p className="text-xl mb-6 text-gray-300 leading-relaxed">
+              Consultor de TI com 20 anos liderando projetos críticos que não podem falhar. 
+              Especialista em gestão de operações complexas, arquitetura de soluções e 
+              implementação de IA em ambientes corporativos.
             </p>
-            <p className="text-lg md:text-xl mb-10 opacity-90 max-w-3xl mx-auto leading-relaxed">
-              Capacidade sênior sob demanda para empresas de TI, consultorias e fábricas de software. Gestão de projetos críticos, 
-              arquitetura de soluções e automação com IA. 20+ anos entregando resultados mensuráveis em Energia, Financeiro, Saúde e Logística.
+            <p className="text-lg mb-10 text-gray-300 leading-relaxed">
+              Ajudo empresas com área de TI interna e empresas de tecnologia a resolver 
+              projetos travados, eliminar processos manuais e implementar IA sem queimar orçamento.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4">
               <a 
-                href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita"
+                href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-primary text-lg px-8 py-4"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
               >
-                Agendar Consultoria Gratuita
+                Agendar Conversa
               </a>
-              <Link href="#servicos" className="btn bg-white text-primary hover:bg-gray-100 text-lg px-8 py-4">
-                Conheça Nossos Serviços
-              </Link>
+              <a 
+                href="#servicos" 
+                className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
+              >
+                Ver Serviços
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sobre o Grupo */}
+      {/* Quem Sou */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-center mb-12">Sobre o Grupo</h2>
+            <h2 className="text-4xl font-heading font-bold mb-8">Quem Sou</h2>
+            
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                <strong className="text-dark">Aldo Santos Group</strong> é uma consultoria especializada em gestão de projetos de TI 
-                e transformação de operações. Com expertise profunda em IA e automação, resolvemos as dores mais urgentes de empresas 
-                de tecnologia: projetos críticos sem liderança sênior, processos manuais insustentáveis e falta de capacidade técnica especializada.
+                Passei 20 anos liderando projetos críticos para empresas de referência nos setores 
+                de Energia, Financeiro, Saúde e Logística. Gerenciei operações de <strong className="text-primary">R$ 12M+ anuais</strong>, 
+                liderei times de <strong className="text-primary">40+ profissionais</strong> e entreguei resultados como 
+                <strong className="text-primary"> +43% aumento de margem de lucro</strong> e <strong className="text-primary">-45% redução de chamados</strong> 
+                mantendo <strong className="text-primary">100% de SLA</strong> em operações 24x7.
               </p>
+
               <p>
-                Nossa abordagem combina gestão sênior de projetos com expertise técnica hands-on em IA - um perfil raro no mercado. 
-                Não somos uma agência genérica: somos especialistas que já gerenciaram operações de <strong className="text-primary">R$ 12M+ anuais</strong>, 
-                lideraram times de <strong className="text-primary">40+ profissionais</strong> e entregaram projetos com 
-                <strong className="text-primary"> ROI de 340%</strong> em menos de 90 dias.
+                Em 2022-2024, fiz uma pausa estratégica para me especializar profundamente em 
+                Inteligência Artificial prática - não teoria acadêmica, mas implementação real 
+                com LLMs, automação e agentes inteligentes em produção.
               </p>
+
               <p>
-                Trabalhamos com empresas de TI, consultorias e fábricas de software que precisam de capacidade sênior sem comprometer 
-                orçamento, resolver gargalos operacionais críticos ou implementar IA de forma prática e rentável.
+                Hoje combino gestão sênior de projetos com expertise técnica hands-on em IA. 
+                Um perfil raro no mercado: falo tanto com C-level sobre estratégia quanto com 
+                desenvolvedores sobre arquitetura técnica.
               </p>
+
+              <div className="bg-blue-50 border-l-4 border-primary p-6 rounded-r-lg">
+                <p className="font-semibold text-dark mb-3">Atuo para:</p>
+                <ul className="space-y-2 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">→</span>
+                    <span>Empresas médias e grandes com área de TI interna</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">→</span>
+                    <span>Consultorias de TI e fábricas de software</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">→</span>
+                    <span>Empresas em transformação digital</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-primary mr-2">→</span>
+                    <span>Setores: Tecnologia, Energia, Financeiro, Saúde, Logística, Indústria, Varejo</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Como Trabalhamos */}
+      {/* Como Trabalho */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
-          <h2 className="text-center mb-4">Como Trabalhamos</h2>
-          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Não somos consultoria genérica que entrega PowerPoint. Atuamos de forma estratégica 
-            ou hands-on, dependendo da necessidade. Resultado mensurável é garantia.
+          <h2 className="text-4xl font-heading font-bold text-center mb-4">Como Trabalho</h2>
+          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Não entrego apenas PowerPoint. Posso atuar como gerente temporário, 
+            arquiteto de soluções ou consultor estratégico - você decide o modelo 
+            que faz mais sentido para seu contexto.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -80,9 +111,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-3">Diagnóstico</h3>
+              <h3 className="font-heading font-semibold text-xl mb-3">Conversa Inicial</h3>
               <p className="text-gray-600">
-                1-2 semanas entendendo contexto, processos, dores reais e oportunidades de melhoria.
+                30-60 minutos. Você conta a dor, eu digo se posso ajudar e como.
               </p>
             </div>
             
@@ -90,9 +121,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-3">Proposta Clara</h3>
+              <h3 className="font-heading font-semibold text-xl mb-3">Diagnóstico</h3>
               <p className="text-gray-600">
-                Plano de ação com escopo, prazo, investimento e resultados esperados mensuráveis.
+                1-2 semanas entendendo contexto, processos e oportunidades reais.
               </p>
             </div>
             
@@ -100,9 +131,9 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-3">Execução ou Mentoria</h3>
+              <h3 className="font-heading font-semibold text-xl mb-3">Proposta Clara</h3>
               <p className="text-gray-600">
-                Posso executar direto, mentorar seu time ou atuar como gerente temporário. Você decide.
+                Escopo, prazo, investimento e resultados esperados mensuráveis.
               </p>
             </div>
             
@@ -110,38 +141,68 @@ export default function Home() {
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="font-heading font-semibold text-xl mb-3">Resultados Mensuráveis</h3>
+              <h3 className="font-heading font-semibold text-xl mb-3">Execução</h3>
               <p className="text-gray-600">
-                Entregas com métricas claras de sucesso. ROI demonstrado, não promessas vazias.
+                Implemento direto, mentoro seu time ou atuo temporariamente.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Linhas de Serviço */}
-      <section id="servicos" className="section-padding bg-bg-light">
+      {/* Serviços */}
+      <section id="servicos" className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-center mb-4">Linhas de Serviço</h2>
+          <h2 className="text-4xl font-heading font-bold text-center mb-4">Serviços</h2>
           <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Soluções especializadas para otimizar operações, implementar IA e estruturar gestão de projetos
+            Três linhas de atuação para resolver as dores mais urgentes de empresas com área de TI
           </p>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              title="Transformação de Processos"
-              description="Identificamos gargalos operacionais e automatizamos com IA e integrações inteligentes. Eliminamos trabalho manual, reduzimos custos e aumentamos produtividade com ROI demonstrado em 90 dias."
-              link="/transformacao-processos"
-            />
-            <ServiceCard
-              title="Arquitetura de Soluções IA"
-              description="Desenhamos e implementamos soluções de IA adaptadas à sua realidade. Desde o levantamento de requisitos até a entrega técnica, garantindo que tecnologia gere resultado financeiro real."
-              link="/arquitetura-solucoes-ia"
-            />
-            <ServiceCard
-              title="PMO as a Service"
-              description="Gestão temporária de projetos críticos ou estruturação de processos de entrega. Assumimos projetos travados, restruturamos entregas e capacitamos seu time para autonomia."
-              link="/pmo-as-service"
-            />
+            <Link href="/transformacao-processos" className="card hover:scale-105 transition-transform group">
+              <div className="bg-gradient-to-br from-primary to-blue-600 h-48 rounded-lg mb-6 flex items-center justify-center">
+                <svg className="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-dark mb-3 group-hover:text-primary transition-colors">
+                Transformação de Processos
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Identifico gargalos operacionais e implemento automação com IA e integrações inteligentes. 
+                Elimino trabalho manual, reduzo custos e aumento produtividade com ROI demonstrado.
+              </p>
+            </Link>
+
+            <Link href="/arquitetura-solucoes-ia" className="card hover:scale-105 transition-transform group">
+              <div className="bg-gradient-to-br from-secondary to-purple-600 h-48 rounded-lg mb-6 flex items-center justify-center">
+                <svg className="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-dark mb-3 group-hover:text-secondary transition-colors">
+                Arquitetura de Soluções IA
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Desenho e implemento soluções de IA adaptadas à sua realidade. Do levantamento de 
+                requisitos à entrega técnica, garantindo que tecnologia gere resultado financeiro real.
+              </p>
+            </Link>
+
+            <Link href="/pmo-as-service" className="card hover:scale-105 transition-transform group">
+              <div className="bg-gradient-to-br from-accent to-orange-600 h-48 rounded-lg mb-6 flex items-center justify-center">
+                <svg className="w-20 h-20 text-white opacity-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-dark mb-3 group-hover:text-accent transition-colors">
+                PMO as a Service
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Atuo como gerente temporário de projetos críticos ou estruturo processos de entrega. 
+                Assumo projetos travados, reestruturo entregas e capacito times para autonomia.
+              </p>
+            </Link>
           </div>
         </div>
       </section>
@@ -149,7 +210,7 @@ export default function Home() {
       {/* Resultados Entregues */}
       <section className="section-padding bg-dark text-white">
         <div className="container-custom">
-          <h2 className="text-center mb-12 text-white">Resultados Entregues</h2>
+          <h2 className="text-4xl font-heading font-bold text-center mb-12 text-white">Resultados Entregues</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">20+</div>
@@ -179,10 +240,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Empresas/Clientes */}
+      {/* Experiência com Empresas */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <h2 className="text-center mb-4">Experiência com Empresas de Referência</h2>
+          <h2 className="text-4xl font-heading font-bold text-center mb-4">Experiência com Empresas de Referência</h2>
           <p className="text-center text-xl text-gray-600 mb-12">
             Projetos críticos entregues para líderes de mercado em diversos setores
           </p>
@@ -192,7 +253,7 @@ export default function Home() {
               'Light', 'Banco Rendimento', 'JSL Logística', 'Amil Saúde', 'Hospital Sírio Libanês',
               'Magazine Luiza', 'Stefanini', 'Vincit', 'Meta IT', 'Cadmus'
             ].map((company) => (
-              <div key={company} className="bg-white rounded-lg p-6 text-center shadow-sm hover:shadow-md transition-shadow">
+              <div key={company} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow border border-gray-200">
                 <p className="font-semibold text-dark">{company}</p>
               </div>
             ))}
@@ -200,91 +261,125 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ferramentas Que Usamos */}
+      {/* Expertise Técnica */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
-          <h2 className="text-center mb-4">Ferramentas Que Usamos</h2>
-          <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Soluções proprietárias desenvolvidas ao longo de 20 anos que aceleram a implementação e garantem resultados. 
-            Estas ferramentas são utilizadas dentro dos nossos serviços de consultoria, não vendidas separadamente.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-            <SolutionCard
-              title="Base de Conhecimento RAG"
-              description="Sistema inteligente que centraliza toda documentação técnica e operacional da empresa. Sua equipe consulta como se fosse o especialista mais sênior, reduzindo onboarding de meses para semanas."
-            />
-            <SolutionCard
-              title="Chatbots Especializados"
-              description="Agentes de IA treinados para diferentes áreas: Negócios (POs, pré-venda), Gestão (diretores, gerentes), Desenvolvimento (times técnicos) e RH (bem-estar, recrutamento). Disponíveis 24/7."
-            />
-            <SolutionCard
-              title="Automações N8N"
-              description="Templates prontos de automação para processos críticos de TI: integração de sistemas, workflows de aprovação, dashboards em tempo real, alertas inteligentes. Implementação rápida."
-            />
-            <SolutionCard
-              title="Hub Produtividade Projetos"
-              description="Ferramentas e processos para aumentar eficiência de gestão de projetos: templates de documentação, checklists automatizados, métricas em tempo real, rituais otimizados."
-            />
-          </div>
-          <div className="text-center">
-            <Link href="/solucoes" className="btn btn-secondary text-lg px-8 py-4">
-              Ver Todas as Soluções
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Recente */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <h2 className="text-center mb-12">Últimos Artigos</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
-            {[
-              {
-                title: 'Por Que Sua Consultoria de TI Precisa de IA',
-                excerpt: 'Entenda como IA pode transformar operações de consultoria de TI e quais erros evitar na implementação.',
-                date: '15 Fev 2026',
-                slug: 'por-que-consultoria-ti-precisa-ia'
-              },
-              {
-                title: 'Como Reduzir 42% dos Custos Operacionais com Automação',
-                excerpt: 'Case real de transformação de processos com automação inteligente e ROI comprovado.',
-                date: '10 Fev 2026',
-                slug: 'reduzir-custos-operacionais-automacao'
-              },
-              {
-                title: 'RAG vs Fine-Tuning: Qual Usar na Sua Empresa?',
-                excerpt: 'Comparação técnica e prática entre RAG e Fine-tuning para base de conhecimento corporativa.',
-                date: '5 Fev 2026',
-                slug: 'rag-vs-finetuning-base-conhecimento'
-              }
-            ].map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="card hover:scale-105 transition-transform">
-                <div className="bg-gradient-to-br from-primary to-blue-600 h-48 rounded-lg mb-4 flex items-center justify-center">
-                  <svg className="w-16 h-16 text-white opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </div>
-                <div className="text-sm text-gray-500 mb-2">{post.date}</div>
-                <h3 className="text-xl font-heading font-bold text-dark mb-3">{post.title}</h3>
-                <p className="text-gray-600">{post.excerpt}</p>
-              </Link>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/blog" className="btn btn-outline text-lg px-8 py-4">
-              Ver Todos os Artigos
-            </Link>
+          <h2 className="text-4xl font-heading font-bold mb-12 text-center">Expertise Técnica</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            <div className="card">
+              <h3 className="text-xl font-heading font-semibold mb-4 text-primary">Gestão & Metodologias</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>PMI, Scrum, Kanban, SAFe</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>ITIL (Service Management)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>Product Ownership</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>Business Analysis</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>Gestão de Riscos e Crises</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">→</span>
+                  <span>Liderança de Times</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="card">
+              <h3 className="text-xl font-heading font-semibold mb-4 text-secondary">Inteligência Artificial</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-secondary mr-2">→</span>
+                  <span>LangChain, RAG, Multi-Agentes</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-2">→</span>
+                  <span>OpenAI, Anthropic, Google Gemini</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-2">→</span>
+                  <span>N8N (automação de workflows)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-2">→</span>
+                  <span>Python, APIs, Integrações</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary mr-2">→</span>
+                  <span>Implementação em produção</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="card">
+              <h3 className="text-xl font-heading font-semibold mb-4 text-accent">Desenvolvimento</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">→</span>
+                  <span>Backend: Python, C#, .NET, Java</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">→</span>
+                  <span>Frontend: React, TypeScript</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">→</span>
+                  <span>Bancos: PostgreSQL, SQL Server, Oracle</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-accent mr-2">→</span>
+                  <span>DevOps: Docker, Git, CI/CD</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="card">
+              <h3 className="text-xl font-heading font-semibold mb-4 text-dark">Setores de Experiência</h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-dark mr-2">→</span>
+                  <span>Energia (8 anos)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dark mr-2">→</span>
+                  <span>Financeiro (4 anos)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dark mr-2">→</span>
+                  <span>Saúde (3 anos)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dark mr-2">→</span>
+                  <span>Logística (2 anos)</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-dark mr-2">→</span>
+                  <span>Varejo, Tecnologia</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
 
       {/* CTA Final */}
       <CTASection
-        title="Pronto para Otimizar Suas Operações de TI?"
-        description="Agende uma consultoria gratuita e descubra como podemos ajudar sua empresa a eliminar gargalos, automatizar processos e aumentar a produtividade com IA."
-        buttonText="Falar com Especialista no WhatsApp"
-        buttonLink="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita"
+        title="Pronto para Resolver Isso?"
+        description="Agende uma conversa e descubra como posso ajudar sua empresa a eliminar gargalos, automatizar processos e entregar projetos críticos no prazo."
+        buttonText="Falar no WhatsApp"
+        buttonLink="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa"
       />
     </>
   )
