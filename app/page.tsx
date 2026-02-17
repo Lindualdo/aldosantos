@@ -187,8 +187,8 @@ export default function Home() {
               <div className="text-gray-300">Anos de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">R$ 12M+</div>
-              <div className="text-gray-300">Operação Gerenciada</div>
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">$12M+</div>
+              <div className="text-gray-300">Ao ano em Operação Gerenciada</div>
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">40+</div>
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="text-gray-300">Aumento Margem Lucro</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">340%</div>
+              <div className="text-4xl md:text-5xl font-bold text-primary mb-2">63%</div>
               <div className="text-gray-300">ROI em Projeto IA</div>
             </div>
             <div className="text-center">
