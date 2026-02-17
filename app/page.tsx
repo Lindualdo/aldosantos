@@ -68,6 +68,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Empresas do Setor de Energia */}
+      <section className="py-16 bg-gray-50 border-y border-gray-200">
+        <div className="container-custom">
+          <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
+            Experiência no Setor de Energia
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
+            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <img 
+                src="/images/clients/edp.png" 
+                alt="EDP - Energias de Portugal" 
+                className="h-12 md:h-16 w-auto object-contain"
+              />
+            </div>
+            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <img 
+                src="/images/clients/cpfl.png" 
+                alt="CPFL Energia" 
+                className="h-12 md:h-16 w-auto object-contain"
+              />
+            </div>
+            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+              <img 
+                src="/images/clients/neoenergia.png" 
+                alt="Neoenergia" 
+                className="h-12 md:h-16 w-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Como Trabalho */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
@@ -166,10 +198,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                IA & Automação de Processos
+                Soluções de IA & Automação de Processos
               </h3>
               <p className="text-gray-100 leading-relaxed mb-6">
-                Identifico gargalos operacionais e implemento soluções de Inteligência Artificial e automação customizadas. Do diagnóstico à entrega técnica, elimino trabalho manual, integro sistemas e gero ROI demonstrado em produção.
+                Revisão, simplificação e automação de processos. Criação de Base de Conhecimento e Chatbots Especializados ( negócio, gestão e desenvolvimento). Clone o conhecimento dos seus melhores colaboradores e expanda a produtividade e eficiência.
               </p>
               <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
             </Link>
