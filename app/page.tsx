@@ -1,47 +1,26 @@
 import Link from 'next/link'
+import Hero from '@/components/Hero'
 import CTASection from '@/components/CTASection'
 
 export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white section-padding">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
-              Aldo Santos
-            </h1>
-            <p className="text-2xl md:text-3xl font-semibold mb-6">
-              Consultoria de TI & Gestão de Projetos
-            </p>
-            <p className="text-xl mb-6 text-gray-300 leading-relaxed">
-              Consultor de TI com 20 anos liderando projetos críticos que não podem falhar. 
-              Especialista em gestão de operações complexas, arquitetura de soluções e 
-              implementação de IA em ambientes corporativos.
-            </p>
-            <p className="text-lg mb-10 text-gray-300 leading-relaxed">
-              Ajudo empresas com área de TI interna e empresas de tecnologia a resolver 
-              projetos travados, eliminar processos manuais e implementar IA sem queimar orçamento.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a 
-                href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
-              >
-                Agendar Conversa
-              </a>
-              <a 
-                href="#servicos" 
-                className="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-colors text-center"
-              >
-                Ver Serviços
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title="Aldo Santos"
+        subtitle="Consultoria de TI & Gestão de Projetos"
+        description="Consultor de TI com 20 anos liderando projetos críticos que não podem falhar. Especialista em gestão de operações complexas, arquitetura de soluções e implementação de IA em ambientes corporativos."
+        description2="Ajudo empresas com área de TI interna e empresas de tecnologia a resolver projetos travados, eliminar processos manuais e implementar IA sem queimar orçamento."
+        primaryCTA={{
+          text: "Agendar Conversa",
+          href: "https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa"
+        }}
+        secondaryCTA={{
+          text: "Ver Serviços",
+          href: "#servicos"
+        }}
+        bgColor="dark"
+      />
 
       {/* Quem Sou */}
       <section className="section-padding bg-white">
