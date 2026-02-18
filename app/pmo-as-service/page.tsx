@@ -221,10 +221,10 @@ export default function PMOAsService() {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="card bg-white">
-                <h4 className="text-xl font-bold mb-3 text-secondary">Operação R$ 12M+ Anual</h4>
+                <h4 className="text-xl font-bold mb-3 text-secondary">Operação $12M+ Anual</h4>
                 <p className="text-gray-700 mb-4">
-                  Gestão de operação crítica 24x7 para 6 distribuidoras de energia. 40+ profissionais sob gestão. 
-                  100% SLA cumprido, +43% margem de lucro.
+                  Gestão de operação crítica 24x7 para 6 distribuidoras de energia (CPFL, Neoenergia, Cemig, EDP, Energisa, Light). 
+                  40+ profissionais sob gestão. 100% SLA cumprido, +43% margem de lucro, 53% redução de chamados.
                 </p>
                 <p className="text-sm text-gray-600">
                   <strong>Setor:</strong> Energia | <strong>Duração:</strong> 8 anos
@@ -286,12 +286,16 @@ export default function PMOAsService() {
               <h3 className="text-2xl font-heading font-bold mb-6">Experiência em Gestão</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <strong className="text-dark">Aldo Santos</strong> - 20 anos gerenciando projetos críticos que não podem falhar. 
-                  Operações 24x7, SLA apertado, stakeholders exigentes, times distribuídos. Já passei por todas as crises possíveis.
+                  <strong className="text-dark">Aldo Santos</strong> - Com mais de 20 anos liderando projetos críticos para empresas de referência nos setores 
+                  de Energia, Financeiro, Saúde e Logística. Gerenciei operações de <strong className="text-secondary">$12M+ anuais</strong>, 
+                  liderei times de <strong className="text-secondary">40+ profissionais</strong> e entreguei resultados como 
+                  <strong className="text-secondary"> +43% aumento de margem de lucro</strong> e <strong className="text-secondary">53% redução de chamados</strong> 
+                  mantendo <strong className="text-secondary">100% de SLA</strong> em operações 24x7.
                 </p>
                 <p>
+                  Operações 24x7, SLA apertado, stakeholders exigentes, times distribuídos. Já passei por todas as crises possíveis. 
                   Certificações e expertise: MBA Gestão de Projetos (FGV), PMI/PMBOK, Scrum, Kanban, SAFe, ITIL, CMMI Nível 5. 
-                  Não é teoria de livro - são metodologias aplicadas em contextos reais de pressão.
+                  Não é teoria de livro — são metodologias aplicadas em contextos reais de pressão.
                 </p>
                 <p>
                   Track record: Nunca tive projeto cancelado sob minha gestão. <strong className="text-secondary">100% de entrega</strong>, 

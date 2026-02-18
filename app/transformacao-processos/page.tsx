@@ -300,14 +300,15 @@ export default function TransformacaoProcessos() {
               <h3 className="text-2xl font-heading font-bold mb-6">Sobre o Consultor</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <strong className="text-dark">Aldo Santos</strong> - 20 anos liderando operações críticas que não podem falhar. 
-                  Gerenciei operações de R$ 12M+ anuais para 6 das maiores distribuidoras de energia do Brasil (CPFL, Neoenergia, 
-                  Cemig, EDP, Energisa, Light), com 40+ profissionais sob gestão.
+                  <strong className="text-dark">Aldo Santos</strong> - Com mais de 20 anos liderando projetos críticos para empresas de referência nos setores 
+                  de Energia, Financeiro, Saúde e Logística. Gerenciei operações de <strong className="text-primary">$12M+ anuais</strong>, 
+                  liderei times de <strong className="text-primary">40+ profissionais</strong> e entreguei resultados como 
+                  <strong className="text-primary"> +43% aumento de margem de lucro</strong> e <strong className="text-primary">53% redução de chamados</strong> 
+                  mantendo <strong className="text-primary">100% de SLA</strong> em operações 24x7.
                 </p>
                 <p>
-                  Resultados comprovados: <strong className="text-primary">+43% aumento de margem de lucro</strong> através de 
-                  otimização de processos, <strong className="text-primary">-45% redução de chamados</strong>, 
-                  <strong className="text-primary"> 100% cumprimento de SLA</strong> em operações 24x7.
+                  Gerenciei operações críticas para 6 das maiores distribuidoras de energia do Brasil (CPFL, Neoenergia, 
+                  Cemig, EDP, Energisa, Light), onde conhecimento e processos eram ativos críticos.
                 </p>
                 <p>
                   Especialização técnica em automação: N8N, LangChain, RAG, APIs, integrações de sistemas legados. 

@@ -316,12 +316,16 @@ export default function ArquiteturaSolucoesIA() {
               <h3 className="text-2xl font-heading font-bold mb-6">Expertise Técnica</h3>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <strong className="text-dark">Aldo Santos</strong> combina 20 anos de gestão de projetos críticos com 
-                  especialização profunda em IA prática. Não é teoria acadêmica - é implementação real com LLMs, RAG e agentes.
+                  <strong className="text-dark">Aldo Santos</strong> - Com mais de 20 anos liderando projetos críticos para empresas de referência nos setores 
+                  de Energia, Financeiro, Saúde e Logística. Gerenciei operações de <strong className="text-primary">$12M+ anuais</strong>, 
+                  liderei times de <strong className="text-primary">40+ profissionais</strong> e entreguei resultados como 
+                  <strong className="text-primary"> +43% aumento de margem de lucro</strong> e <strong className="text-primary">53% redução de chamados</strong> 
+                  mantendo <strong className="text-primary">100% de SLA</strong> em operações 24x7.
                 </p>
                 <p>
-                  Formação em IA Makers (Promovaweb, 2025) com foco em N8N, LangChain, Multi-Agentes, RAG e DevOps para IA. 
-                  Experiência hands-on desenvolvendo soluções de IA em produção para empresas reais.
+                  Combino essa experiência em gestão com especialização profunda em IA prática. Não é teoria acadêmica — é implementação 
+                  real com LLMs, RAG e agentes. Formação em IA Makers (Promovaweb, 2025) com foco em N8N, LangChain, Multi-Agentes, RAG 
+                  e DevOps para IA. Experiência hands-on desenvolvendo soluções de IA em produção para empresas reais.
                 </p>
                 <p>
                   Background técnico sólido: 15+ anos desenvolvendo em Python, C#, Java. MBA em Gestão de Projetos (FGV). 

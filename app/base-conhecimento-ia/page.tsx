@@ -540,17 +540,21 @@ export default function BaseConhecimentoIA() {
             <div className="card bg-gradient-to-br from-purple-50 to-white border-l-4 border-[#8b5cf6]">
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Gerenciei operações com <strong className="text-dark">40+ profissionais</strong> onde conhecimento era ativo 
-                  crítico. Implementei processos de documentação e transferência de conhecimento que reduziram dependência 
-                  de pessoas específicas em <strong className="text-[#8b5cf6]">60%</strong>.
+                  Com mais de 20 anos liderando projetos críticos para empresas de referência nos setores de Energia, Financeiro, 
+                  Saúde e Logística. Gerenciei operações de <strong className="text-dark">$12M+ anuais</strong>, liderei times de 
+                  <strong className="text-dark"> 40+ profissionais</strong> e entreguei resultados como <strong className="text-dark">+43% aumento de margem de lucro</strong> 
+                  e <strong className="text-dark">53% redução de chamados</strong> mantendo <strong className="text-dark">100% de SLA</strong> em operações 24x7.
+                </p>
+                <p>
+                  Gerenciei operações onde conhecimento era ativo crítico. Implementei processos de documentação e transferência 
+                  de conhecimento que reduziram dependência de pessoas específicas em <strong className="text-[#8b5cf6]">60%</strong>. 
+                  Trabalhei com 6 das maiores distribuidoras de energia do Brasil (CPFL, Neoenergia, Cemig, EDP, Energisa, Light).
                 </p>
                 <p>
                   Especialização técnica em RAG, LangChain e implementação de chatbots inteligentes. Não vendo produto 
-                  pronto — implemento solução customizada para seu contexto específico.
-                </p>
-                <p>
-                  Entendo tanto a dor de negócio (gestão, operação, vendas) quanto a implementação técnica. Essa 
-                  combinação garante que a base será realmente usada, não só mais uma ferramenta abandonada.
+                  pronto — implemento solução customizada para seu contexto específico. Entendo tanto a dor de negócio (gestão, 
+                  operação, vendas) quanto a implementação técnica. Essa combinação garante que a base será realmente usada, 
+                  não só mais uma ferramenta abandonada.
                 </p>
               </div>
             </div>

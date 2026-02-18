@@ -21,7 +21,7 @@ export default function Footer() {
             <h4 className="text-lg font-heading font-semibold mb-4 text-white">Serviços</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/transformacao-processos" className="text-gray-300 hover:text-primary transition-colors">
+                <Link href="/consultoria-engenharia-software" className="text-gray-300 hover:text-primary transition-colors">
                   Consultoria de TI & Engenharia de Software
                 </Link>
               </li>

@@ -130,65 +130,73 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <Link href="/base-conhecimento-ia" className="bg-[#8b5cf6] rounded-lg p-8 hover:shadow-xl transition-all group">
-              <div className="h-48 flex items-center justify-center mb-6">
+          <Link href="/base-conhecimento-ia" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-[#6d28d9] to-[#a78bfa] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                Base de Conhecimento Inteligente
-              </h3>
-              <p className="text-gray-100 leading-relaxed mb-6">
-                Capture e centralize conhecimento técnico, de negócio, processos e arquitetura em uma base inteligente com IA. Elimine dependência de pessoas específicas, reduza onboarding de meses para semanas e consulte informações críticas instantaneamente.
-              </p>
-              <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
+              <div className="p-6">
+                <h3 className="text-2xl font-heading font-bold text-gray-900 mb-3">
+                  Base de Conhecimento Inteligente
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Capture e centralize conhecimento técnico, de negócio, processos e arquitetura em uma base inteligente com IA. Elimine dependência de pessoas específicas, reduza onboarding de meses para semanas e consulte informações críticas instantaneamente.
+                </p>
+                <span className="text-[#6d28d9] font-semibold group-hover:underline">Saiba Mais →</span>
+              </div>
             </Link>
 
-            <Link href="/transformacao-processos" className="bg-[#27ae60] rounded-lg p-8 hover:shadow-xl transition-all group">
-              <div className="h-48 flex items-center justify-center mb-6">
+            <Link href="/transformacao-processos" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-[#e74c3c] to-[#dc2626] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                Otimização de processos
-              </h3>
-              <p className="text-gray-100 leading-relaxed mb-6">
-                Revisão, simplificação e automação de processos. Identifico gargalos operacionais e implemento automação com IA e integrações inteligentes. Elimino trabalho manual, reduzo custos e aumento produtividade com ROI demonstrado.. 
-              </p>
-              <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
+              <div className="p-6">
+                <h3 className="text-2xl font-heading font-bold text-gray-900 mb-3">
+                  Otimização de processos
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Revisão, simplificação e automação de processos. Identifico gargalos operacionais e implemento automação com IA e integrações inteligentes. Elimino trabalho manual, reduzo custos e aumento produtividade com ROI demonstrado.
+                </p>
+                <span className="text-[#e74c3c] font-semibold group-hover:underline">Saiba Mais →</span>
+              </div>
             </Link>
 
 
-            <Link href="/transformacao-processos" className="bg-[#2c3e50] rounded-lg p-8 hover:shadow-xl transition-all group">
-              <div className="h-48 flex items-center justify-center mb-6">
+            <Link href="/consultoria-engenharia-software" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-[#1e293b] to-[#475569] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                Consultoria de TI & Engenharia de Software
-              </h3>
-              <p className="text-gray-200 leading-relaxed mb-6">
-                Atuo em toda a esteira de engenharia de software: levantamento e documentação de requisitos, análise de viabilidade, arquitetura de soluções, revisão de processos de desenvolvimento e apoio técnico a times. Da concepção à entrega, garanto que tecnologia e negócio falem a mesma língua.
-              </p>
-              <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
+              <div className="p-6">
+                <h3 className="text-2xl font-heading font-bold text-gray-900 mb-3">
+                  Consultoria de TI & Engenharia de Software
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Atuo em toda a esteira de engenharia de software: levantamento e documentação de requisitos, análise de viabilidade, arquitetura de soluções, revisão de processos de desenvolvimento e apoio técnico a times. Garanto que tecnologia e negócio falem a mesma língua — do escopo à entrega.
+                </p>
+                <span className="text-[#1e293b] font-semibold group-hover:underline">Saiba Mais →</span>
+              </div>
             </Link>
 
-            <Link href="/pmo-as-service" className="bg-[#3498db] rounded-lg p-8 hover:shadow-xl transition-all group">
-              <div className="h-48 flex items-center justify-center mb-6">
+            <Link href="/pmo-as-service" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
+              <div className="h-48 bg-gradient-to-br from-[#27ae60] to-[#16a34a] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                Gestão de Projetos & Operações
-              </h3>
-              <p className="text-gray-100 leading-relaxed mb-6">
-                Posso atuar como gestor sênior temporário, mentorar gestores internos, estruturar ou otimizar processos de entrega, implementar PMO e monitorar resultados. Apoio no planejamento estratégico, gestão de stakeholders e análise de viabilidade de projetos críticos.
-              </p>
-              <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
+              <div className="p-6">
+                <h3 className="text-2xl font-heading font-bold text-gray-900 mb-3">
+                  Gestão de Projetos & Operações
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Posso atuar como gestor sênior temporário, mentorar gestores internos, estruturar ou otimizar processos de entrega, implementar PMO e monitorar resultados. Apoio no planejamento estratégico, gestão de stakeholders e análise de viabilidade de projetos críticos.
+                </p>
+                <span className="text-[#27ae60] font-semibold group-hover:underline">Saiba Mais →</span>
+              </div>
             </Link>
 
             
