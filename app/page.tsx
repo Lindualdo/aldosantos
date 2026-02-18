@@ -247,48 +247,32 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
             {[
-              { name: 'CPFL Energia', logo: '/logos/cpfl.png' },
-              { name: 'Neoenergia', logo: '/logos/neoenergia.svg' },
-              { name: 'EDP', logo: '/logos/edp.svg' },
-              { name: 'Cemig', logo: '/logos/cemig.svg' },
-              { name: 'Light', logo: '/logos/light.png' },
-              { name: 'Banco Rendimento', logo: '/logos/banco-rendimento.png' },
-              { name: 'JSL Logística', logo: '/logos/jsl.png' },
-              { name: 'Qualicorp', logo: '/logos/qualicorp.png' },
-              { name: 'Hospital Sírio Libanês', logo: '/logos/sirio-libanes.svg' },
-              { name: 'Magazine Luiza', logo: '/logos/magazine-luiza.png' },
-              { name: 'Stefanini', logo: '/logos/stefanini.png' },
-              { name: 'Kaffa', logo: '/logos/kaffa.png' },
-              { name: 'Imagem Geosistemas', logo: '/logos/imagem-geosistemas.png' },
-              { name: 'Meta IT', logo: '/logos/meta-it.svg' },
-              { name: 'Cadmus', logo: '/logos/cadmus.png' }
+              { name: 'CPFL Energia', logo: '/logos/cpfl.png', w: 111, h: 81 },
+              { name: 'Neoenergia', logo: '/logos/neoenergia.svg', w: 150, h: 92 },
+              { name: 'EDP', logo: '/logos/edp.svg', w: 180, h: 180 },
+              { name: 'Cemig', logo: '/logos/cemig.svg', w: 200, h: 60 },
+              { name: 'Light', logo: '/logos/light.png', w: 200, h: 78 },
+              { name: 'Banco Rendimento', logo: '/logos/banco-rendimento.png', w: 250, h: 180 },
+              { name: 'JSL Logística', logo: '/logos/jsl.png', w: 400, h: 145 },
+              { name: 'Qualicorp', logo: '/logos/qualicorp.png', w: 263, h: 96 },
+              { name: 'Hospital Sírio Libanês', logo: '/logos/sirio-libanes.svg', w: 200, h: 100 },
+              { name: 'Magazine Luiza', logo: '/logos/magazine-luiza.png', w: 600, h: 600, maxH: 'max-h-[200px]' },
+              { name: 'Stefanini', logo: '/logos/stefanini.png', w: 234, h: 52 },
+              { name: 'Kaffa', logo: '/logos/kaffa.png', w: 400, h: 114 },
+              { name: 'Imagem Geosistemas', logo: '/logos/imagem-geosistemas.png', w: 306, h: 165 },
+              { name: 'Meta IT', logo: '/logos/meta-it.svg', w: 120, h: 24 },
+              { name: 'Cadmus', logo: '/logos/cadmus.png', w: 450, h: 450, maxH: 'max-h-[200px]' },
             ].map((company) => (
               <div key={company.name} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow border border-gray-200 flex items-center justify-center min-h-[140px]">
-                {company.logo ? (
-                  <img 
-                    src={company.logo} 
-                    alt={company.name}
-                    className={`w-full h-auto object-contain opacity-80 hover:opacity-100 transition-opacity ${
-                      company.name === 'CPFL Energia' ? 'max-h-[61px]' :
-                      company.name === 'Neoenergia' ? 'max-h-[100px]' :
-                      company.name === 'EDP' ? 'max-h-[100px]' :
-                      company.name === 'Cemig' ? 'max-h-[120px]' :
-                      company.name === 'Light' ? 'max-h-[100px]' :
-                      company.name === 'Banco Rendimento' ? 'max-h-[100px]' :
-                      company.name === 'JSL Logística' ? 'max-h-[100px]' :
-                      company.name === 'Qualicorp' ? 'max-h-[100px]' :
-                      company.name === 'Hospital Sírio Libanês' ? 'max-h-[100px]' :
-                      company.name === 'Magazine Luiza' ? 'max-h-[130px]' :
-                      company.name === 'Stefanini' ? 'max-h-[100px]' :
-                      company.name === 'Kaffa' ? 'max-h-[100px]' :
-                      company.name === 'Cadmus' ? 'max-h-[203px]' :
-                      company.name === 'Imagem Geosistemas' ? 'max-h-[100px]' :
-                      company.name === 'Meta IT' ? 'max-h-[24px]' : 'max-h-[80px]'
-                    }`}
-                  />
-                ) : (
-                  <p className="font-semibold text-dark">{company.name}</p>
-                )}
+                <img
+                  src={company.logo}
+                  alt={company.name}
+                  width={company.w}
+                  height={company.h}
+                  loading="lazy"
+                  decoding="async"
+                  className={`max-w-full h-auto object-contain opacity-80 hover:opacity-100 transition-opacity ${'maxH' in company ? company.maxH : 'max-h-[100px]'}`}
+                />
               </div>
             ))}
           </div>

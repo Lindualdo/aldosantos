@@ -17,8 +17,8 @@ const config: Config = {
         'bg-light': '#f8f9fa',
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        heading: ['Inter', 'sans-serif'],
+        sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        heading: ['var(--font-inter)', 'sans-serif'],
       },
     },
   },

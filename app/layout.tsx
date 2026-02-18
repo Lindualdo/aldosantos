@@ -1,7 +1,15 @@
 import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-inter',
+})
 
 const siteUrl = 'https://aldosantos.com'
 
@@ -80,8 +88,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR">
-      <body>
+    <html lang="pt-BR" className={inter.variable}>
+      <body className={inter.className}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
