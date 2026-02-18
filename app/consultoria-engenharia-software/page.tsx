@@ -3,8 +3,9 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Consultoria em Engenharia de Software | Aldo Santos',
-  description: 'Atuo em toda a esteira de engenharia de software — do levantamento de requisitos à entrega — garantindo que tecnologia e negócio falem a mesma língua.',
+  title: 'Consultoria de TI & Engenharia de Software',
+  description: 'Consultoria em engenharia de software do levantamento de requisitos à entrega. Tecnologia e negócio na mesma língua — arquitetura, DevOps, qualidade e gestão técnica para empresas em crescimento.',
+  keywords: ['consultoria engenharia de software', 'consultoria de TI', 'arquitetura de software', 'DevOps', 'gestão técnica'],
 }
 
 export default function ConsultoriaEngenhariaSoftware() {

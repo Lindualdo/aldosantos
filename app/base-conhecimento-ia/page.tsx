@@ -3,8 +3,9 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Base de Conhecimento Inteligente com IA | Aldo Santos',
-  description: 'Implemente base de conhecimento inteligente com IA que centraliza expertise técnica, regras de negócio e processos. Acesso instantâneo, zero dependência de pessoas específicas.',
+  title: 'Base de Conhecimento Inteligente com IA',
+  description: 'Centralize expertise técnica, regras de negócio e processos em uma base de conhecimento com IA. Acesso instantâneo via linguagem natural, zero dependência de pessoas específicas.',
+  keywords: ['base de conhecimento IA', 'gestão do conhecimento', 'knowledge base inteligente', 'RAG empresarial', 'documentação inteligente'],
 }
 
 export default function BaseConhecimentoIA() {

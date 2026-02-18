@@ -3,8 +3,9 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'PMO as a Service | Aldo Santos',
-  description: 'Atuo como gerente temporário de projetos críticos para colocar projetos travados no eixo e entregar no prazo.',
+  title: 'PMO as a Service — Gestão de Projetos Críticos',
+  description: 'Gerente de projetos temporário para operações travadas. Gestão de orçamentos de $12M+, times de 40+ profissionais e entrega no prazo com metodologia comprovada em Energia, Saúde e Logística.',
+  keywords: ['PMO as a Service', 'gestão de projetos', 'gerente de projetos temporário', 'projetos críticos', 'PMO terceirizado'],
 }
 
 export default function PMOAsService() {

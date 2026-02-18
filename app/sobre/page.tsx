@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sobre | Aldo Santos',
-  description: 'Conheça minha trajetória de 20+ anos liderando projetos críticos em Energia, Financeiro, Saúde e Logística. Especialização em IA e gestão de operações complexas.',
+  title: 'Sobre Aldo Santos — Consultor de TI & Gestão',
+  description: 'Mais de 20 anos liderando projetos críticos em Energia, Financeiro, Saúde e Logística. Gestão de orçamentos de $12M+, times de 40+ profissionais. Atendimento em Brasil e Europa (Portugal).',
+  keywords: ['Aldo Santos', 'consultor de TI sênior', 'gestor de projetos', 'consultoria Brasil e Europa'],
 }
 
 export default function Sobre() {

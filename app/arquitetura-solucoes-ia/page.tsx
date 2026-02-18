@@ -3,8 +3,9 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Arquitetura de Soluções IA | Aldo Santos',
-  description: 'Desenho e implemento soluções de IA que geram resultado real, não POCs que morrem na gaveta.',
+  title: 'Arquitetura de Soluções com Inteligência Artificial',
+  description: 'Soluções de IA que geram resultado real — não POCs que morrem na gaveta. Arquitetura escalável para automação inteligente, NLP e integração de dados em empresas médias e grandes.',
+  keywords: ['arquitetura de soluções IA', 'inteligência artificial empresarial', 'consultoria IA', 'automação inteligente', 'machine learning empresas'],
 }
 
 export default function ArquiteturaSolucoesIA() {

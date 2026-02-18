@@ -3,8 +3,9 @@ import CTASection from '@/components/CTASection'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Transformação de Processos | Aldo Santos',
-  description: 'Implemento automação com IA que elimina trabalho manual e gera ROI demonstrado em 90 dias.',
+  title: 'Otimização e Transformação de Processos com IA',
+  description: 'Automação inteligente que elimina trabalho manual repetitivo e gera ROI em 90 dias. Redução de 53% em custos operacionais comprovada em empresas de Energia e Logística.',
+  keywords: ['transformação de processos', 'automação com IA', 'otimização de processos', 'redução de custos operacionais', 'RPA inteligente'],
 }
 
 export default function TransformacaoProcessos() {
