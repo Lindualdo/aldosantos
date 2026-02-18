@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Como Trabalho */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
@@ -125,10 +125,11 @@ export default function Home() {
         <div className="container-custom">
           <h2 className="text-4xl font-heading font-bold text-center mb-4">Serviços</h2>
           <p className="text-center text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
-            Três frentes de atuação para empresas de tecnologia e empresas com área de TI interna
+             Frentes de atuação para otimizar operações de TI e gestão de projetos
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
             <Link href="/transformacao-processos" className="bg-[#2c3e50] rounded-lg p-8 hover:shadow-xl transition-all group">
               <div className="h-48 flex items-center justify-center mb-6">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,7 +145,7 @@ export default function Home() {
               <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
             </Link>
 
-            <Link href="/arquitetura-solucoes-ia" className="bg-[#3498db] rounded-lg p-8 hover:shadow-xl transition-all group">
+            <Link href="/pmo-as-service" className="bg-[#3498db] rounded-lg p-8 hover:shadow-xl transition-all group">
               <div className="h-48 flex items-center justify-center mb-6">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
@@ -159,20 +160,36 @@ export default function Home() {
               <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
             </Link>
 
-            <Link href="/pmo-as-service" className="bg-[#27ae60] rounded-lg p-8 hover:shadow-xl transition-all group">
+            <Link href="/base-conhecimento-ia" className="bg-[#8b5cf6] rounded-lg p-8 hover:shadow-xl transition-all group">
+              <div className="h-48 flex items-center justify-center mb-6">
+                <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-heading font-bold text-white mb-3">
+                Base de Conhecimento Inteligente
+              </h3>
+              <p className="text-gray-100 leading-relaxed mb-6">
+                Capture e centralize conhecimento técnico, de negócio, processos e arquitetura em uma base inteligente com IA. Elimine dependência de pessoas específicas, reduza onboarding de meses para semanas e consulte informações críticas instantaneamente.
+              </p>
+              <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
+            </Link>
+
+            <Link href="/transformacao-processos" className="bg-[#27ae60] rounded-lg p-8 hover:shadow-xl transition-all group">
               <div className="h-48 flex items-center justify-center mb-6">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
               </div>
               <h3 className="text-2xl font-heading font-bold text-white mb-3">
-                Soluções de IA & Automação de Processos
+                Otimização de processos
               </h3>
               <p className="text-gray-100 leading-relaxed mb-6">
-                Revisão, simplificação e automação de processos. Criação de Base de Conhecimento e Chatbots Especializados ( negócio, gestão e desenvolvimento). Clone o conhecimento dos seus melhores colaboradores e expanda a produtividade e eficiência.
+                Revisão, simplificação e automação de processos. Identifico gargalos operacionais e implemento automação com IA e integrações inteligentes. Elimino trabalho manual, reduzo custos e aumento produtividade com ROI demonstrado.. 
               </p>
               <span className="text-white font-semibold group-hover:underline">Saiba Mais →</span>
             </Link>
+            
           </div>
         </div>
       </section>

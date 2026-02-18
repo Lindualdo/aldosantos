@@ -15,10 +15,10 @@ export default function TransformacaoProcessos() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading font-bold mb-6">
-              Processos Manuais Custando Milhares por Mês?
+              Processos Manuais e Equipe Senior sobrecarregada?
             </h1>
             <p className="text-xl md:text-2xl mb-8 opacity-95">
-              Implemento automação com IA que elimina trabalho manual e gera ROI demonstrado em 90 dias.
+              Implemento automação com IA e Base de Conhecimento Institucional que elimina trabalho manual e sobrecarga da equipe gerando ROI demonstrado em 90 dias.
             </p>
             <a 
               href="https://wa.me/351932786582?text=Olá, gostaria de agendar uma consultoria gratuita sobre Transformação de Processos"
@@ -41,6 +41,11 @@ export default function TransformacaoProcessos() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ProblemCard
+              title="Reuniões pra marcar mais reuniões"
+              description="Dezenas de reuniões por dia, consomem horas preciosas do seu time. Você descobre problemas tarde demais. Não tem dashboards confiáveis, métricas em tempo real ou alertas automáticos. Gestão reativa ao invés de proativa."
+            />
+           
+            <ProblemCard
               title="Time Sobrecarregado com Tarefas Repetitivas"
               description="Sua equipe gasta 60% do tempo em trabalho manual que poderia ser automatizado: preenchimento de planilhas, atualização de sistemas, envio de relatórios, follow-ups. Produtividade baixa, frustração alta."
             />
@@ -56,10 +61,7 @@ export default function TransformacaoProcessos() {
               title="Gargalos em Processos Críticos"
               description="Aprovações travadas, integrações quebradas, informações presas em silos. Seus processos críticos dependem de pessoas específicas, criando bottlenecks que atrasam toda operação."
             />
-            <ProblemCard
-              title="Falta de Visibilidade em Tempo Real"
-              description="Você descobre problemas tarde demais. Não tem dashboards confiáveis, métricas em tempo real ou alertas automáticos. Gestão reativa ao invés de proativa."
-            />
+          
             <ProblemCard
               title="Integrações Manuais Entre Sistemas"
               description="ERP, CRM, ITSM, ferramentas de projeto - tudo separado. Sua equipe copia e cola informações entre sistemas, gastando horas e introduzindo erros a cada transferência."
