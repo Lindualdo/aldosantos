@@ -67,39 +67,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Empresas do Setor de Energia */}
-      <section className="py-16 bg-gray-50 border-y border-gray-200">
-        <div className="container-custom">
-          <p className="text-center text-sm font-semibold text-gray-500 uppercase tracking-wider mb-8">
-            Experiência no Setor de Energia
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
-            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-              <img 
-                src="/images/clients/edp.png" 
-                alt="EDP - Energias de Portugal" 
-                className="h-12 md:h-16 w-auto object-contain"
-              />
-            </div>
-            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-              <img 
-                src="/images/clients/cpfl.png" 
-                alt="CPFL Energia" 
-                className="h-12 md:h-16 w-auto object-contain"
-              />
-            </div>
-            <div className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-              <img 
-                src="/images/clients/neoenergia.png" 
-                alt="Neoenergia" 
-                className="h-12 md:h-16 w-auto object-contain"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Como Trabalho */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
