@@ -1,8 +1,7 @@
 import { NextResponse } from 'next/server'
-import { Resend } from 'resend'
 
-const TO_EMAIL = process.env.CONTACT_EMAIL || 'contato@aldosantos.com'
-const FROM_EMAIL = process.env.FROM_EMAIL || 'Contato Site <onboarding@resend.dev>'
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 export async function POST(request: Request) {
   try {
@@ -10,7 +9,7 @@ export async function POST(request: Request) {
     if (!apiKey?.trim()) {
       console.error('RESEND_API_KEY não configurada')
       return NextResponse.json(
-        { error: 'E-mail não configurado. Adicione RESEND_API_KEY no arquivo .env.local (veja .env.example).' },
+        { error: 'E-mail não configurado. Adicione RESEND_API_KEY nas variáveis de ambiente.' },
         { status: 503 }
       )
     }
@@ -25,7 +24,10 @@ export async function POST(request: Request) {
       )
     }
 
+    const { Resend } = await import('resend')
     const resend = new Resend(apiKey)
+    const TO_EMAIL = process.env.CONTACT_EMAIL || 'contato@aldosantos.com'
+    const FROM_EMAIL = process.env.FROM_EMAIL || 'Contato Site <onboarding@resend.dev>'
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [TO_EMAIL],
