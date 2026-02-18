@@ -128,7 +128,7 @@ export default function Home() {
              Frentes de atuação para otimizar operações de TI e gestão de projetos
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
           <Link href="/base-conhecimento-ia" className="bg-[#8b5cf6] rounded-lg p-8 hover:shadow-xl transition-all group">
               <div className="h-48 flex items-center justify-center mb-6">
