@@ -247,12 +247,48 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-5xl mx-auto">
             {[
-              'CPFL Energia', 'Neoenergia', 'Cemig', 'EDP', 'Energisa',
-              'Light', 'Banco Rendimento', 'JSL Logística', 'Amil Saúde', 'Hospital Sírio Libanês',
-              'Magazine Luiza', 'Stefanini', 'Vincit', 'Meta IT', 'Cadmus'
+              { name: 'CPFL Energia', logo: '/logos/cpfl.png' },
+              { name: 'Neoenergia', logo: '/logos/neoenergia.svg' },
+              { name: 'EDP', logo: '/logos/edp.svg' },
+              { name: 'Cemig', logo: '/logos/cemig.svg' },
+              { name: 'Light', logo: '/logos/light.png' },
+              { name: 'Banco Rendimento', logo: '/logos/banco-rendimento.png' },
+              { name: 'JSL Logística', logo: '/logos/jsl.png' },
+              { name: 'Qualicorp', logo: '/logos/qualicorp.png' },
+              { name: 'Hospital Sírio Libanês', logo: '/logos/sirio-libanes.svg' },
+              { name: 'Magazine Luiza', logo: '/logos/magazine-luiza.png' },
+              { name: 'Stefanini', logo: '/logos/stefanini.png' },
+              { name: 'Kaffa', logo: '/logos/kaffa.png' },
+              { name: 'Imagem Geosistemas', logo: '/logos/imagem-geosistemas.png' },
+              { name: 'Meta IT', logo: '/logos/meta-it.svg' },
+              { name: 'Cadmus', logo: '/logos/cadmus.png' }
             ].map((company) => (
-              <div key={company} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow border border-gray-200">
-                <p className="font-semibold text-dark">{company}</p>
+              <div key={company.name} className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-md transition-shadow border border-gray-200 flex items-center justify-center min-h-[140px]">
+                {company.logo ? (
+                  <img 
+                    src={company.logo} 
+                    alt={company.name}
+                    className={`w-full h-auto object-contain opacity-80 hover:opacity-100 transition-opacity ${
+                      company.name === 'CPFL Energia' ? 'max-h-[61px]' :
+                      company.name === 'Neoenergia' ? 'max-h-[100px]' :
+                      company.name === 'EDP' ? 'max-h-[100px]' :
+                      company.name === 'Cemig' ? 'max-h-[120px]' :
+                      company.name === 'Light' ? 'max-h-[100px]' :
+                      company.name === 'Banco Rendimento' ? 'max-h-[100px]' :
+                      company.name === 'JSL Logística' ? 'max-h-[100px]' :
+                      company.name === 'Qualicorp' ? 'max-h-[100px]' :
+                      company.name === 'Hospital Sírio Libanês' ? 'max-h-[100px]' :
+                      company.name === 'Magazine Luiza' ? 'max-h-[130px]' :
+                      company.name === 'Stefanini' ? 'max-h-[100px]' :
+                      company.name === 'Kaffa' ? 'max-h-[100px]' :
+                      company.name === 'Cadmus' ? 'max-h-[203px]' :
+                      company.name === 'Imagem Geosistemas' ? 'max-h-[100px]' :
+                      company.name === 'Meta IT' ? 'max-h-[24px]' : 'max-h-[80px]'
+                    }`}
+                  />
+                ) : (
+                  <p className="font-semibold text-dark">{company.name}</p>
+                )}
               </div>
             ))}
           </div>

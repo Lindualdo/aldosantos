@@ -35,18 +35,27 @@ export default function Header() {
                 </svg>
               </button>
               <div 
-                className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                className={`absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-lg py-2 transition-all duration-200 ${servicesOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                 onMouseEnter={() => setServicesOpen(true)}
                 onMouseLeave={() => setServicesOpen(false)}
               >
-                <Link href="/transformacao-processos" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors">
-                  Transformação de Processos
+                <p className="px-4 py-2 text-gray-500 text-sm border-b border-gray-100">
+                  Frentes de atuação para otimizar operações de TI e gestão de projetos
+                </p>
+                <Link href="/#servicos" className="block px-4 py-2 text-primary font-medium text-sm hover:bg-bg-light" onClick={() => setServicesOpen(false)}>
+                  Ver seção Serviços →
                 </Link>
-                <Link href="/arquitetura-solucoes-ia" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors">
-                  Arquitetura de Soluções IA
+                <Link href="/base-conhecimento-ia" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors" onClick={() => setServicesOpen(false)}>
+                  Base de Conhecimento Inteligente
                 </Link>
-                <Link href="/pmo-as-service" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors">
-                  PMO as a Service
+                <Link href="/transformacao-processos" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors" onClick={() => setServicesOpen(false)}>
+                  Otimização de processos
+                </Link>
+                <Link href="/consultoria-engenharia-software" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors" onClick={() => setServicesOpen(false)}>
+                  Consultoria de TI & Engenharia de Software
+                </Link>
+                <Link href="/pmo-as-service" className="block px-4 py-3 text-dark hover:bg-bg-light hover:text-primary transition-colors" onClick={() => setServicesOpen(false)}>
+                  Gestão de Projetos & Operações
                 </Link>
               </div>
             </div>
@@ -91,14 +100,21 @@ export default function Header() {
             </Link>
             <div className="py-2">
               <div className="font-medium text-dark mb-2">Serviços</div>
-              <Link href="/transformacao-processos" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
-                Transformação de Processos
+              <p className="text-sm text-gray-500 mb-2 pl-4">Frentes de atuação para otimizar operações de TI e gestão de projetos</p>
+              <Link href="/#servicos" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Ver seção Serviços
               </Link>
-              <Link href="/arquitetura-solucoes-ia" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
-                Arquitetura de Soluções IA
+              <Link href="/base-conhecimento-ia" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Base de Conhecimento Inteligente
+              </Link>
+              <Link href="/transformacao-processos" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Otimização de processos
+              </Link>
+              <Link href="/consultoria-engenharia-software" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
+                Consultoria de TI & Engenharia de Software
               </Link>
               <Link href="/pmo-as-service" className="block py-2 pl-4 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>
-                PMO as a Service
+                Gestão de Projetos & Operações
               </Link>
             </div>
             <Link href="/sobre" className="block py-2 text-dark hover:text-primary transition-colors" onClick={() => setMobileMenuOpen(false)}>

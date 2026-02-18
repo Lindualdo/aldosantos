@@ -33,3 +33,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ambiente / scripts (Python packages instalados na raiz, cache, etc.)
+/PIL
+/numpy
+/numpy-*
+/pillow-*
+/bin
+__pycache__
+*.pyc
+.python-version
+*.dist-info
