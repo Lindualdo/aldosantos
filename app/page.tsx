@@ -344,7 +344,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary mr-2">→</span>
-                  <span>N8N (automação de workflows)</span>
+                  <span>Automação de proessos (RPA e Chatbots)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-secondary mr-2">→</span>
@@ -410,7 +410,7 @@ export default function Home() {
 
       {/* CTA Final */}
       <CTASection
-        title="Pronto para Resolver Isso?"
+        title="Quer saber como posso ajudar sua empresa?"
         description="Agende uma conversa e descubra como posso ajudar sua empresa a eliminar gargalos, automatizar processos e entregar projetos críticos no prazo."
         buttonText="Falar no WhatsApp"
         buttonLink="https://wa.me/351932786582?text=Olá, gostaria de agendar uma conversa"
