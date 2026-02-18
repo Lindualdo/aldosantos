@@ -1,13 +1,20 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 const TO_EMAIL = process.env.CONTACT_EMAIL || 'contato@aldosantos.com'
 const FROM_EMAIL = process.env.FROM_EMAIL || 'Contato Site <onboarding@resend.dev>'
 
 export async function POST(request: Request) {
   try {
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey?.trim()) {
+      console.error('RESEND_API_KEY não configurada')
+      return NextResponse.json(
+        { error: 'E-mail não configurado. Adicione RESEND_API_KEY no arquivo .env.local (veja .env.example).' },
+        { status: 503 }
+      )
+    }
+
     const body = await request.json()
     const { nome, email, telefone, mensagem } = body
 
@@ -18,14 +25,7 @@ export async function POST(request: Request) {
       )
     }
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY não configurada')
-      return NextResponse.json(
-        { error: 'Serviço de e-mail não configurado.' },
-        { status: 503 }
-      )
-    }
-
+    const resend = new Resend(apiKey)
     const { data, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [TO_EMAIL],
@@ -43,14 +43,18 @@ export async function POST(request: Request) {
 
     if (error) {
       console.error('Resend error:', error)
-      return NextResponse.json({ error: error.message }, { status: 500 })
+      const msg = typeof error === 'object' && error !== null && 'message' in error
+        ? String((error as { message?: string }).message)
+        : 'Erro ao enviar e-mail.'
+      return NextResponse.json({ error: msg }, { status: 500 })
     }
 
     return NextResponse.json({ success: true, id: data?.id })
   } catch (err) {
     console.error('API contato error:', err)
+    const message = err instanceof Error ? err.message : 'Erro inesperado.'
     return NextResponse.json(
-      { error: 'Erro ao enviar mensagem. Tente novamente.' },
+      { error: `Erro ao enviar mensagem: ${message}` },
       { status: 500 }
     )
   }

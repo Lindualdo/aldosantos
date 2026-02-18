@@ -10,10 +10,12 @@ export default function Contato() {
     mensagem: ''
   })
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
+  const [submitError, setSubmitError] = useState<string>('')
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitStatus('loading')
+    setSubmitError('')
     try {
       const res = await fetch('/api/contato', {
         method: 'POST',
@@ -22,6 +24,7 @@ export default function Contato() {
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
+        setSubmitError(typeof data?.error === 'string' ? data.error : 'Erro ao enviar mensagem. Tente novamente ou entre em contato por WhatsApp.')
         setSubmitStatus('error')
         return
       }
@@ -29,6 +32,7 @@ export default function Contato() {
       setFormState({ nome: '', email: '', telefone: '', mensagem: '' })
       setTimeout(() => setSubmitStatus('idle'), 5000)
     } catch {
+      setSubmitError('Erro de conexão. Verifique sua internet e tente novamente.')
       setSubmitStatus('error')
     }
   }
@@ -144,7 +148,7 @@ export default function Contato() {
 
                   {submitStatus === 'error' && (
                     <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg">
-                      Erro ao enviar mensagem. Tente novamente ou entre em contato por WhatsApp.
+                      {submitError || 'Erro ao enviar mensagem. Tente novamente ou entre em contato por WhatsApp.'}
                     </div>
                   )}
                 </form>
