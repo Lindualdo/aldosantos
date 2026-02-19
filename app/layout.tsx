@@ -43,11 +43,20 @@ export const metadata: Metadata = {
     siteName: 'Aldo Santos',
     title: 'Aldo Santos | Gerente Projetos Sr | IA & Automação | Remoto PT/BR',
     description: 'Gerente de Projetos com 20+ anos. Especialista em gestão de operações, IA e automação. Disponível PJ remoto Portugal e Brasil.',
+    images: [
+      {
+        url: '/og-banner.png',
+        width: 1200,
+        height: 630,
+        alt: 'Aldo Santos — Gerente de Projetos Sr | IA & Automação',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Aldo Santos | Gerente Projetos Sr | IA & Automação | Remoto PT/BR',
     description: 'Gerente de Projetos com 20+ anos. Especialista em gestão de operações, IA e automação. Disponível PJ remoto Portugal e Brasil.',
+    images: ['/og-banner.png'],
   },
 }
 
