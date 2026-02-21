@@ -13,7 +13,7 @@ export default function HeaderV4() {
                     <Link href="/" className="text-2xl font-bold text-slate-900 tracking-tight shrink-0">
                         Aldo Santos
                         <span className="block text-[11px] font-medium tracking-widest text-slate-500 uppercase mt-0.5">
-                            Executive Consulting
+                            Consultor Executivo
                         </span>
                     </Link>
 

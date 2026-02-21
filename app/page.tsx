@@ -31,17 +31,17 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 lg:pt-20 lg:pb-32 relative z-10">
           <div className="max-w-4xl">
             <h2 className="text-blue-500 font-semibold tracking-widest text-sm uppercase mb-6 flex items-center gap-4">
-              <span className="w-8 h-[2px] bg-blue-500"></span>
-              Consultoria Executiva B2B
+
+              Delivery/Operações (AMS) | Transformação Digital
             </h2>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-8">
               Processos falhos custam até 42% do seu orçamento operacional. <br />
-              <span className="text-slate-400">Eu estanco esse sangramento.</span>
+              <span className="text-slate-400">Vamos resolver isso juntos?</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-2xl font-light">
-              Trago governança para operações caóticas, elimino gargalos com processos limpos e IA, e devolvo a previsibilidade que a sua diretoria cobra e o mercado exige.
+              Simplificação e automação de processos para escalar sua operação, reduzir custos invisíveis e devolver a previsibilidade que a sua diretoria exige.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5">

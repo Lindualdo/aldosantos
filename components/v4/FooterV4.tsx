@@ -11,7 +11,7 @@ export default function FooterV4() {
                             Aldo Santos
                         </h3>
                         <p className="text-sm font-medium tracking-widest text-slate-500 uppercase mb-6">
-                            Executive Consulting
+                            Consultor Executivo
                         </p>
                         <p className="text-sm leading-relaxed text-slate-400">
                             Transformação Digital & Melhoria de Processos operacionais para médias e grandes corporações.
