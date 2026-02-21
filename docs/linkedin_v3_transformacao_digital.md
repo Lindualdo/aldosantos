@@ -42,6 +42,9 @@ Consultor Sr em Transformação Digital | Delivery Manager | Automação & IA ap
 **Opção 3 - Mais conservador (otimizado para busca de recruiters):**
 Delivery Manager | Transformação Digital & Otimização de Processos | Gestão de Operações de TI | Remoto PJ
 
+**Opção 4 - Mais conservador: (otimizado para busca de recruiters - GP)**
+Gestão de Projetos | Gestão de Operações (AMS) | Melhoria de Processos | Transformação Digital | Remoto PJ
+
 ---
 
 ## RESUMO (SOBRE)

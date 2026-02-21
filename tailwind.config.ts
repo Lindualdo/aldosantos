@@ -9,17 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#3498db',
-        secondary: '#27ae60',
-        accent: '#e74c3c',
-        dark: '#2c3e50',
-        light: '#ecf0f1',
-        'bg-light': '#f8f9fa',
+        primary: '#0f172a', // slate-900 (Navy/Corporate)
+        secondary: '#1e293b', // slate-800
+        accent: '#2563eb', // blue-600 (Para CTAs)
+        dark: '#020617', // slate-950
+        light: '#f8fafc', // slate-50
+        'bg-light': '#ffffff', // Clean white
       },
       fontFamily: {
         sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        heading: ['var(--font-inter)', 'sans-serif'],
+        heading: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
       },
+      boxShadow: {
+        'premium': '0 4px 20px -2px rgba(15, 23, 42, 0.05)',
+      }
     },
   },
   plugins: [],
