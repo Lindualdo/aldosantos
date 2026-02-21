@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import HeaderV4 from '@/components/v4/HeaderV4'
@@ -16,57 +16,63 @@ const siteUrl = 'https://aldosantos.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Aldo Santos | Executive Consulting & Transformação Digital',
-    template: '%s | Aldo Santos',
+    default: 'Aldo Santos | Consultor Executivo & Transformação Digital',
+    template: '%s | Aldo Santos'
   },
-  description: 'Consultoria Executiva em Transformação Digital e Melhoria de Processos operacionais para médias e grandes corporações. Elimino custos ocultos e trago governança.',
+  description: 'Transformação Digital & Melhoria de Processos operacionais para médias e grandes corporações',
   keywords: [
-    'transformação digital',
-    'otimização de processos corporativos',
-    'consultoria executiva',
-    'interim management',
-    'delivery manager',
-    'gestão de operações',
-    'automação de processos corporativos',
-    'remoto portugal brasil',
-    'pj',
+    'Consultoria B2B',
+    'Transformação Digital',
+    'Melhoria de Processos',
+    'Gestão Operacional',
+    'Interim Management',
+    'Alocação PJ em Liderança',
+    'Eficiência Corporativa',
+    'IA na Gestão'
   ],
-  authors: [{ name: 'Aldo Santos', url: siteUrl }],
+  authors: [{ name: 'Aldo Santos' }],
   creator: 'Aldo Santos',
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-snippet': -1, 'max-image-preview': 'large' },
+  publisher: 'Aldo Santos',
+  robots: 'index, follow',
+  alternates: {
+    canonical: 'https://aldosantos.com.br',
   },
-  alternates: { canonical: siteUrl },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: siteUrl,
-    siteName: 'Aldo Santos - Executive Consulting',
-    title: 'Aldo Santos | Executive Consulting & Transformação Digital',
-    description: 'Consultoria Executiva em Transformação Digital. Trago governança para operações caóticas e elimino gargalos.',
+    url: 'https://aldosantos.com.br',
+    siteName: 'Aldo Santos - Consultor Executivo',
+    title: 'Aldo Santos | Consultor Executivo & Transformação Digital',
+    description: 'Transformação Digital & Melhoria de Processos operacionais para médias e grandes corporações.',
     images: [
       {
-        url: '/og-banner.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Aldo Santos — Executive Consulting & Transformação Digital',
+        alt: 'Aldo Santos — Consultor Executivo & Transformação Digital',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aldo Santos | Transformação Digital',
-    description: 'Consultoria Executiva em Transformação Digital.',
-    images: ['/og-banner.png'],
+    title: 'Aldo Santos | Consultor Executivo',
+    description: 'Transformação Digital & Melhoria de Processos operacionais para médias e grandes corporações.',
+    creator: '@aldosantos', // Substituir pelo seu @ se houver
+    images: ['/og-image.png'],
   },
+  verification: {
+    google: 'adicione-seu-codigo-aqui', // Para Google Search Console
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#0f172a', // slate-900
 }
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
-  name: 'Aldo Santos - Executive Consulting',
+  name: 'Aldo Santos - Consultor Executivo',
   description: 'Consultoria executiva em Transformação Digital e Operações para médias e grandes corporações.',
   url: siteUrl,
   email: 'contato@aldosantos.com',

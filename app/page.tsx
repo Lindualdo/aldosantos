@@ -97,13 +97,15 @@ export default function Home() {
               <div className="text-red-500 mb-6">
                 <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">2. Gestão e Delivery</h4>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">2. Delivery e operações (AMS)</h4>
               <ul className="space-y-3 relative z-10">
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Projeto estratégico está travado há vários meses</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Líderes atuam no "feeling" sem cadência ou dados</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> A área comercial vende e o Delivery não entrega</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Escopo monstro que destrói o orçamento original</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Reuniões de comitê pesadas e clientes na defensiva</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> SLA estourando, satifasção do cliente caindo, faturamentos travados</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Melhorias e lições não são compartilhadas entre os times (produto, delivery e operações)</li>
               </ul>
             </div>
 
@@ -148,7 +150,7 @@ export default function Home() {
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">5. Vendas vs Realidade</h4>
               <ul className="space-y-3 relative z-10">
-                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O comercial "passa pra frente" sem transição efetiva</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O comercial vende e "passa pra frente" sem transição efetiva para Delivery</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Escopo subdimensionando riscos e prazos originais</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Propostas hyper customizadas impedem ganho final em escala</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Promessas que a equipe de engenharia não pode sustentar</li>
@@ -176,68 +178,141 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-900 text-slate-300">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center text-balance">
-          <svg className="w-12 h-12 mx-auto text-blue-600 mb-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-8 leading-tight">
-            Nenhuma ferramenta resolve problema de gestão. Eu não entrego mágicas, entrego métodos.
-          </h2>
-          <p className="text-lg md:text-xl leading-relaxed font-light mb-8">
-            Não chego na sua empresa com uma "varinha mágica de Inteligência Artificial" achando que isso irá salvar times desalinhados e lideranças ausentes. O que eu entrego é clareza de processos.
-            <strong className="text-white font-medium"> Primeiro a gente arruma a casa. Depois, a gente escala a operação usando a tecnologia certa (Automação, RAG, IA). </strong>
-          </p>
-          <p className="text-lg leading-relaxed font-bold text-white">
-            E para isso funcionar, precisaremos atuar a quatro mãos. A Transformação Digital de verdade requer o meu diagnóstico e o seu forte patrocínio corporativo.
-          </p>
-        </div>
-      </section>
-
       <section className="py-24 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Metodologia B2B</h3>
+            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Como eu posso resolver o seu problema</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
-              Como orquestramos a mudança real
+              A teoria aceita tudo, o campo de batalha não.
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              O modelo tradicional de "diagnosticar a empresa inteira por meses" morreu. Minha abordagem é focada na dor crônica e na velocidade de resposta (Time To Value).
+              Após mais de 20 anos sofrendo e evoluindo no campo de batalha, aprendi a transformar operações que sangravam dinheiro em máquinas eficientes — menos retrabalho, mais margem, clientes mais satisfeitos.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden">
-              <div className="w-full h-1 bg-slate-200 absolute top-0 left-0" />
-              <h4 className="font-bold text-slate-900 tracking-tight text-xl mb-4 pt-2">01. Assessment Focado</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">Prazo: 2 a 4 Semanas</p>
-              <p className="text-slate-600 text-sm leading-relaxed mt-auto">Mergulho agressivo exclusivo no processo/gargalo que mais penaliza o seu P&L. Identificação exata das ineficiências e projeção do ROI para a correção.</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden">
-              <div className="w-full h-1 bg-blue-400 absolute top-0 left-0" />
-              <h4 className="font-bold text-slate-900 tracking-tight text-xl mb-4 pt-2">02. Design de Solução</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">Prazo: 1 a 2 Semanas</p>
-              <p className="text-slate-600 text-sm leading-relaxed mt-auto">Desenho da nova arquitetura combinando visão de negócios com tecnologia robusta (seja via n8n, AI Agents ou refatoração estrutural dos processos vigentes).</p>
-            </div>
-
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+            {/* Passo 01 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
               <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
-              <h4 className="font-bold text-slate-900 tracking-tight text-xl mb-4 pt-2">03. Rollout B2B</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">Prazo: Sprint based (Contínuo)</p>
-              <p className="text-slate-600 text-sm leading-relaxed mt-auto">Implementação e implantação gradual lado a lado com as lideranças operacionais. Ajuste constante, integração de sistemas e estabilização.</p>
+              <div className="min-h-[4rem] mb-4 pt-2">
+                <h4 className="font-bold text-slate-900 tracking-tight text-xl">01. Diagnóstico e Priorização</h4>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">Mergulho agressivo na operação com apoio forte da alta gestão. Identifico onde a dor financeira ou gargalo é maior e priorizo o ataque utilizando meus próprios métodos e ferramentas de assessment.</p>
             </div>
 
-            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden">
-              <div className="w-full h-1 bg-slate-900 absolute top-0 left-0" />
-              <h4 className="font-bold text-slate-900 tracking-tight text-xl mb-4 pt-2">04. Gov. e Handover</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">Prazo: On-going</p>
-              <p className="text-slate-600 text-sm leading-relaxed mt-auto">Instituição de KPIs sólidos. Minha missão não estende dependências; crio a operação autônoma, capacito o time e entrego o bastão com a empresa andando.</p>
+            {/* Passo 02 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="min-h-[4rem] mb-4 pt-2">
+                <h4 className="font-bold text-slate-900 tracking-tight text-xl">02. Simplificação e Redesenho do Processo</h4>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">Processos ineficientes automatizados só aceleram os problemas. Eu uso IA e automação de forma avançada, aplicando as melhores práticas para garantir resultados sem desperdício de recursos.</p>
+            </div>
+
+            {/* Passo 03 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="min-h-[4rem] mb-4 pt-2">
+                <h4 className="font-bold text-slate-900 tracking-tight text-xl">03. Piloto e Automação AI</h4>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">Aplicação do novo fluxo em um projeto piloto seguro. Aqui entra a tecnologia pesada: criamos bancos de dados em RAG para base de conhecimento e montamos o seu ecossistema.</p>
+            </div>
+
+            {/* Passo 04 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="min-h-[4rem] mb-4 pt-2">
+                <h4 className="font-bold text-slate-900 tracking-tight text-xl">04. Rollout em Produção</h4>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">Os resultados estão coerentes com o esperado? Institucionalizamos, monitoramos e ajustamos sempre que necessário.</p>
+            </div>
+
+            {/* Passo 05 */}
+            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="min-h-[4rem] mb-4 pt-2">
+                <h4 className="font-bold text-slate-900 tracking-tight text-xl">05. Treinamento e Operação</h4>
+              </div>
+              <p className="text-slate-600 text-sm leading-relaxed">Eu saio, a operação autônoma fica. A equipe é treinada, e deixo um Chatbot Inteligente com base de conhecimento sobre o processo para dar suporte em tempo integral</p>
             </div>
           </div>
         </div>
       </section>
+      <section className="py-24 bg-slate-900 text-white relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">Resultados que aparecem no financeiro</h3>
+            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+              Operações reais, nas maiores distribuidoras de energia do Brasil
+            </h2>
+            <p className="text-slate-400">
+              Números que o seu CFO vai querer ver.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">20+</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">Anos de Experiência</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">R$12M+</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">Operação Anual Gerenciada</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">50+</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">Profissionais Liderados</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">+43%</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">Aumento de Margem</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">-32%</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">Custos Operacionais</div>
+            </div>
+            <div>
+              <div className="text-3xl md:text-4xl font-bold text-blue-500 mb-2">100%</div>
+              <div className="text-[10px] md:text-xs text-slate-400 uppercase tracking-wider font-bold">SLA Cumprido</div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <section className="py-24 bg-slate-50/50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">Prova Social</h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+              Empresas que Confiam
+            </h2>
+            <p className="text-slate-600">
+              Projetos de transformação entregues para líderes de mercado em diversos setores
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {logos.map((company) => (
+              <div
+                key={company.name}
+                className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex items-center justify-center aspect-square transition-all hover:shadow-md hover:border-blue-100 group"
+              >
+                <div className="relative w-full h-full flex items-center justify-center grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                  <Image
+                    src={company.logo}
+                    alt={company.name}
+                    width={company.w}
+                    height={company.h}
+                    className={`max-w-full object-contain filter ${'maxH' in company ? company.maxH : 'max-h-12'}`}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="atuacao" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-16">
@@ -261,9 +336,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Alocação PJ em Liderança</h4>
+                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Alocação PJ (Liderança Hands-on)</h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Contratação via B2B para assumir papéis críticos fixos na sua operacão. Atuo no dia a dia como Gerente de Projetos, Delivery ou Head de Operações para estabilizar o caos, liderar times e entregar previsibilidade para a Diretoria.
+                  Gerente de Projetos, Operações ou Delivery. B2B fixo para assumir times, gerir o portfólio técnico e garantir que o que o cliente pediu é o que a engenharia entrega. Liderança técnica que sabe cobrar porque sabe fazer.
                 </p>
               </div>
 
@@ -275,7 +350,7 @@ export default function Home() {
                 </div>
                 <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Consultoria de Transformação Digital</h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Para dores específicas com escopo fechado. Diagnostico gargalos em processos, implanto gestão baseada em IA (como bases RAG para suporte) ou integrações complexas de dados. Treino sua equipe e entrego a operação rodando limpa.
+                  Projetos de escopo fechado para resolver gargalos específicos. Diagnóstico de ineficiências, implantação de Automação/IA (n8n, RAG, Python) e redesenho de processos críticos. Entrega com Time-To-Value acelerado e ROI projetado.
                 </p>
               </div>
             </div>
@@ -283,57 +358,50 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-slate-900 border-t border-slate-950 text-white overflow-hidden">
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 mb-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Autoridade e Histórico</h3>
-              <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-8">
-                Operações Reais.<br />Impacto Mensurável.
-              </h2>
-              <p className="text-lg text-slate-400 leading-relaxed max-w-lg font-light">
-                Com 20 anos na linha de frente (e gestão direta de dezenas de profissionais e orçamentos multimilionários), já passei dos desafios de papel para as entregas em estado de alta pressão.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-6 bg-slate-800/50 p-8 rounded-3xl border border-slate-800 backdrop-blur-sm">
-              <div className="p-4">
-                <div className="text-4xl font-bold text-white mb-1"><span className="text-blue-500">20</span>+</div>
-                <div className="text-slate-400 text-sm font-medium">Anos de Experiência</div>
-              </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-white mb-1">R$<span className="text-blue-500">12</span>M+</div>
-                <div className="text-slate-400 text-sm font-medium">OPEX Anual Gerido</div>
-              </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-white mb-1">+<span className="text-blue-500">43</span>%</div>
-                <div className="text-slate-400 text-sm font-medium">Aumento de Margem</div>
-              </div>
-              <div className="p-4">
-                <div className="text-4xl font-bold text-white mb-1">-<span className="text-blue-500">42</span>%</div>
-                <div className="text-slate-400 text-sm font-medium">Custos Operacionais</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="pt-16 border-t border-slate-800/50">
-            <h4 className="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-12">Empresas e Projetos que moldaram minha trajetória</h4>
-            <div className="flex flex-wrap justify-center gap-x-12 gap-y-12 items-center opacity-70 grayscale">
-              {logos.map((company) => (
-                <div key={company.name} className="flex items-center justify-center transition-all hover:opacity-100 hover:grayscale-0 duration-500">
-                  <Image
-                    src={company.logo}
-                    alt={company.name}
-                    width={company.w}
-                    height={company.h}
-                    className={`max-w-full object-contain ${'maxH' in company ? company.maxH : 'h-8 max-h-8 sm:h-10 sm:max-h-10'}`}
-                  />
+              <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Dúvidas Frequentes</h3>
+              <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-8">Perguntas sobre a consultoria</h2>
+              <div className="space-y-8">
+                <div>
+                  <h4 className="text-lg font-bold text-slate-900 mb-2">Você assume times já existentes (PJ)?</h4>
+                  <p className="text-slate-600 leading-relaxed text-sm">Sim. Atuo como liderança B2B para organizar a casa, metodologias e entregas de equipes internas ou terceirizadas já contratadas.</p>
                 </div>
-              ))}
+                <div>
+                  <h4 className="text-lg font-bold text-slate-900 mb-2">Você desenvolve as automações ou apenas dá conselhos?</h4>
+                  <p className="text-slate-600 leading-relaxed text-sm">Desenvolvo hands-on. Minha entrega vai além do diagnóstico; eu configuro as IAs, as esteiras de n8n e os bancos RAG para que a solução rode na prática.</p>
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-slate-900 mb-2">Você atende quais tipos de indústrias?</h4>
+                  <p className="text-slate-600 leading-relaxed text-sm">Meus métodos são agnósticos ao setor. Já transformei processos em Energia, Bancário, Saúde e Logística, focando na lógica operacional.</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-slate-900 rounded-3xl p-10 text-white flex flex-col justify-center relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-8 opacity-10">
+                <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M13 14h-2V9h2v5zm0 4h-2v-2h2v2zM1 21h22L12 2 1 21z" /></svg>
+              </div>
+              <h3 className="text-blue-500 font-bold tracking-widest text-xs uppercase mb-6">Custo de Oportunidade</h3>
+              <h2 className="text-3xl font-bold mb-6 italic leading-tight">"Quanto custa para a sua empresa esperar mais 12 meses para arrumar os processos?"</h2>
+              <p className="text-slate-400 leading-relaxed mb-8">
+                Todo mês com a operação caótica é um percentual da sua margem jogado no lixo. A Transformação Digital não é um luxo, é sobrevivência de EBITDA.
+              </p>
+              <a
+                href="https://wa.me/351932786582?text=Olá, gostaria de agendar um diagnóstico de transformação digital"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20 w-fit"
+              >
+                Garantir Diagnóstico Agora
+              </a>
             </div>
           </div>
         </div>
       </section>
+
+
 
     </>
   )
