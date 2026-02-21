@@ -67,58 +67,109 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Identificação de Gargalos</h3>
+            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Problemas Frequentes</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
-              O problema não são as pessoas.<br />
-              São os processos que elas operam.
+              Você reconhece algum desses cenários?
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              O caos financeiro e o estresse operacional não surgem do nada. Eles se manifestam e se multiplicam exatamente nestas quatro camadas da sua organização:
+              Já ajudei a solucionar desafios exatos como estes liderando times em diversas operações. Se você vive alguns deles, nós podemos trabalhar juntos para estancar o problema e otimizar seus processos.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group hover:border-blue-200 transition-colors">
-              <div className="text-6xl font-black text-slate-100 absolute top-6 right-8 pointer-events-none group-hover:text-blue-50 transition-colors">01</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 relative z-10">Operação e Eficiência</h4>
-              <p className="text-slate-600 leading-relaxed mb-6 font-medium relative z-10">Onde a burocracia e o trabalho braçal sangram a margem.</p>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Equipe presa em tarefas massivas que deveriam ser autônomas.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> O custo do backoffice cresce proporcionalmente ao número de clientes.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Falta de esteira automatizada em N1/L1, inflando chamados.</li>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Camada 1 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">1. Operação e Eficiência</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Reuniões apenas para marcar outras reuniões</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Time sobrecarregado focado em tarefas manuais</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Integração humana: dados copiados entre sistemas</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Expansão exige contratar analistas de forma linear</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Fluxo travado na aprovação de uma única pessoa</li>
               </ul>
             </div>
 
-            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group hover:border-blue-200 transition-colors">
-              <div className="text-6xl font-black text-slate-100 absolute top-6 right-8 pointer-events-none group-hover:text-blue-50 transition-colors">02</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 relative z-10">Governança e Delivery</h4>
-              <p className="text-slate-600 leading-relaxed mb-6 font-medium relative z-10">Onde o escopo choca com a realidade da capacidade produtiva.</p>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Projetos que atrasam sem explicação clara ou plano de mitigação.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Conflito entre Vendas (que promete) e Sustentação (que apaga o fogo).</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Stakeholders insatisfeitos, reuniões longas e zero previsibilidade.</li>
+            {/* Camada 2 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">2. Gestão e Delivery</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Projeto estratégico está travado há vários meses</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Líderes atuam no "feeling" sem cadência ou dados</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> A área comercial vende e o Delivery não entrega</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Escopo monstro que destrói o orçamento original</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Reuniões de comitê pesadas e clientes na defensiva</li>
               </ul>
             </div>
 
-            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group hover:border-blue-200 transition-colors">
-              <div className="text-6xl font-black text-slate-100 absolute top-6 right-8 pointer-events-none group-hover:text-blue-50 transition-colors">03</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 relative z-10">Arquitetura e Soluções</h4>
-              <p className="text-slate-600 leading-relaxed mb-6 font-medium relative z-10">Onde o design do processo dita se a empresa escala ou estagna.</p>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Soluções empurradas "pra ontem" com altíssimo débito técnico.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> ERPs, CRMs e ITSMs trabalhando em silos e travando análises.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Negócio não fala a língua da TI e os projetos perdem o rumo.</li>
+            {/* Camada 3 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">3. Engenharia e Produtos</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Cliente pede A, time entende B, engenharia faz C</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Sistemas Frankenstein: impossível dar manutenção</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Soluções vendidas sem validação de viabilidade</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Tecnologia e negócios não falam a mesma língua</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Atualização em produção vira uma roleta russa</li>
               </ul>
             </div>
 
-            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group hover:border-blue-200 transition-colors">
-              <div className="text-6xl font-black text-slate-100 absolute top-6 right-8 pointer-events-none group-hover:text-blue-50 transition-colors">04</div>
-              <h4 className="text-xl font-bold text-slate-900 mb-4 relative z-10">Conhecimento (Dependência)</h4>
-              <p className="text-slate-600 leading-relaxed mb-6 font-medium relative z-10">Onde o conhecimento não é da empresa, mas sim do "Herói".</p>
-              <ul className="space-y-3">
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> A substituição de um "sênior" trava a equipe por meses.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Perguntas repetitivas consumindo as horas dos recursos mais caros.</li>
-                <li className="flex gap-3 text-slate-600 text-sm"><span className="text-blue-600 font-bold shrink-0">→</span> Empresa incapaz de crescer porque o intelecto reside em planilhas cegas.</li>
+            {/* Camada 4 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">4. Gestão do Conhecimento</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Sênior sai levando a inteligência técnica com ele</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Cliente precisando reexplicar seu negócio a cada troca de equipe</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Novos analistas travados no onboarding sem base</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Dúvidas repetitivas estrangulam arquitetos seniores</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Técnicos caros que acabam deslocados para suporte em pré-vendas</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O mesmo erro sistêmico ocorre novamente meses depois</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Regras, LGPD e compliance espalhados num inferno de planilhas</li>
+              </ul>
+            </div>
+
+            {/* Camada 5 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">5. Vendas vs Realidade</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O comercial "passa pra frente" sem transição efetiva</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Escopo subdimensionando riscos e prazos originais</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Propostas hyper customizadas impedem ganho final em escala</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Promessas que a equipe de engenharia não pode sustentar</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Comercial vendendo sem apoio ou insumo tecnológico</li>
+              </ul>
+            </div>
+
+            {/* Camada 6 */}
+            <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
+              <div className="text-red-500 mb-6">
+                <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-bold text-slate-900 mb-6 relative z-10">6. A Guerra de Interesses</h4>
+              <ul className="space-y-3 relative z-10">
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Setores comprando sistemas avulsos pois a TI é lenta</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Terceirizados sem fiscalização técnica torrando seu caixa</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O jogo do empurra: sistema cai e nenhum fornecedor assume</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Projetos de alto impacto vetados por egos departamentais</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Empresa se tornando refém de uma única produtora</li>
               </ul>
             </div>
           </div>
@@ -210,9 +261,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Interim Management</h4>
+                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Alocação PJ em Liderança</h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Assumo áreas inteiras (Delivery, PMO, Operações de Tecnologia) como alocado/PJ no momento de crise. A finalidade é estancar problemas severos, reestruturar processos viciados, motivar times e devolver a linha estabilizada à Diretoria após alguns meses.
+                  Contratação via B2B para assumir papéis críticos fixos na sua operacão. Atuo no dia a dia como Gerente de Projetos, Delivery ou Head de Operações para estabilizar o caos, liderar times e entregar previsibilidade para a Diretoria.
                 </p>
               </div>
 
@@ -222,9 +273,9 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Turnaround de Projetos (Consultoria)</h4>
+                <h4 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">Consultoria de Transformação Digital</h4>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  Contratações para gargalos específicos: Por exemplo, a operação de Suporte custa fortunas. Diagnostico a ineficiência do processo, implanto novas estruturas de gestão combinadas com IA (Base RAG para L1) e otimização do fluxo comercial.
+                  Para dores específicas com escopo fechado. Diagnostico gargalos em processos, implanto gestão baseada em IA (como bases RAG para suporte) ou integrações complexas de dados. Treino sua equipe e entrego a operação rodando limpa.
                 </p>
               </div>
             </div>
