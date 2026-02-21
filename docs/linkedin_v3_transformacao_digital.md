@@ -63,7 +63,7 @@ COMO ENTREGO TRANSFORMAÇÃO:
 → Gestão de Projetos e Operações de TI (AMS, PMO, delivery end-to-end)
 → Análise de Negócios e Product Ownership (requisitos, roadmap, backlog)
 → Redesenho e automação de processos com IA
-→ Pré-venda e desenho de soluções técnico-comerciais
+→ Pré-venda e desenho de soluções   técnico-comerciais
 → Estruturação e melhoria contínua (PMI, Scrum, Kanban, ITIL)
 
 SETORES: Energia, Financeiro, Saúde, Logística, Varejo, Tecnologia

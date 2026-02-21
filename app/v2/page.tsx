@@ -2,7 +2,7 @@ import Link from 'next/link'
 import HeroV2 from '@/components/v2/HeroV2'
 import CTASectionV2 from '@/components/v2/CTASectionV2'
 
-export default function Home() {
+export default function HomeV2() {
   return (
     <>
       <HeroV2
@@ -21,6 +21,7 @@ export default function Home() {
         }}
       />
 
+      {/* Quem Sou - Reescrito como narrativa de autoridade */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
@@ -70,6 +71,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Resultados Entregues */}
       <section id="resultados" className="section-padding bg-dark text-white">
         <div className="container-custom">
           <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase text-center">Resultados Comprovados</p>
@@ -108,6 +110,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Serviços */}
       <section id="servicos" className="section-padding bg-white">
         <div className="container-custom">
           <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase text-center">Serviços</p>
@@ -119,6 +122,7 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Card 1: Otimização de Processos */}
             <Link href="/transformacao-processos" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-[#e74c3c] to-[#dc2626] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -136,6 +140,7 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Card 2: Gestão de Projetos & Operações */}
             <Link href="/pmo-as-service" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-[#27ae60] to-[#16a34a] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -153,6 +158,7 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Card 3: Consultoria em Engenharia de Software */}
             <Link href="/consultoria-engenharia-software" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-[#1e293b] to-[#475569] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -170,6 +176,7 @@ export default function Home() {
               </div>
             </Link>
 
+            {/* Card 4: Base de Conhecimento Inteligente */}
             <Link href="/base-conhecimento-ia" className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all group overflow-hidden">
               <div className="h-48 bg-gradient-to-br from-[#6d28d9] to-[#a78bfa] flex items-center justify-center">
                 <svg className="w-20 h-20 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -187,9 +194,11 @@ export default function Home() {
               </div>
             </Link>
           </div>
+
         </div>
       </section>
 
+      {/* Experiência com Empresas */}
       <section className="section-padding bg-bg-light">
         <div className="container-custom">
           <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase text-center">Prova Social</p>
@@ -231,6 +240,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Expertise Técnica */}
       <section className="section-padding bg-white">
         <div className="container-custom">
           <p className="text-primary font-semibold text-sm mb-2 tracking-wide uppercase text-center">Competências</p>
@@ -284,6 +294,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA Final */}
       <CTASectionV2
         title="Sua operação pode gerar mais resultado?"
         description="Vamos conversar. Eu digo se posso ajudar, como e em quanto tempo você verá os primeiros resultados."

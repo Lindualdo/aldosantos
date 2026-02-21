@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+import HeaderV2 from '@/components/v2/HeaderV2'
+import FooterV2 from '@/components/v2/FooterV2'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,17 +16,20 @@ const siteUrl = 'https://aldosantos.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Aldo Santos | Gerente Projetos Sr | IA & Automação | Remoto PT/BR',
+    default: 'Aldo Santos | Transformação Digital & Otimização de Processos | Remoto PT/BR',
     template: '%s | Aldo Santos',
   },
-  description: 'Gerente de Projetos com 20+ anos. Especialista em gestão de operações, IA e automação. Disponível PJ remoto Portugal e Brasil.',
+  description: 'Especialista em Transformação Digital e Otimização de Processos com 20+ anos. Gestão de projetos, automação e IA aplicada ao negócio. Remoto PJ Portugal e Brasil.',
   keywords: [
-    'gerente projetos',
-    'product owner',
-    'pmo',
-    'ia automacao',
-    'consultor ti senior',
-    'remoto portugal',
+    'transformação digital',
+    'otimização de processos',
+    'delivery manager',
+    'gerente projetos senior',
+    'automação processos',
+    'ia aplicada negócio',
+    'consultor transformação digital',
+    'remoto portugal brasil',
+    'pj remoto',
   ],
   authors: [{ name: 'Aldo Santos', url: siteUrl }],
   creator: 'Aldo Santos',
@@ -41,21 +44,21 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: siteUrl,
     siteName: 'Aldo Santos',
-    title: 'Aldo Santos | Gerente Projetos Sr | IA & Automação | Remoto PT/BR',
-    description: 'Gerente de Projetos com 20+ anos. Especialista em gestão de operações, IA e automação. Disponível PJ remoto Portugal e Brasil.',
+    title: 'Aldo Santos | Transformação Digital & Otimização de Processos',
+    description: 'Especialista em Transformação Digital com 20+ anos conduzindo mudanças que geram resultado financeiro mensurável.',
     images: [
       {
         url: '/og-banner.png',
         width: 1200,
         height: 630,
-        alt: 'Aldo Santos — Gerente de Projetos Sr | IA & Automação',
+        alt: 'Aldo Santos — Transformação Digital & Otimização de Processos',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aldo Santos | Gerente Projetos Sr | IA & Automação | Remoto PT/BR',
-    description: 'Gerente de Projetos com 20+ anos. Especialista em gestão de operações, IA e automação. Disponível PJ remoto Portugal e Brasil.',
+    title: 'Aldo Santos | Transformação Digital & Otimização de Processos',
+    description: 'Especialista em Transformação Digital com 20+ anos conduzindo mudanças que geram resultado financeiro mensurável.',
     images: ['/og-banner.png'],
   },
 }
@@ -64,23 +67,23 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Aldo Santos',
-  description: 'Consultoria de TI, Gestão de Projetos e Soluções com Inteligência Artificial.',
+  description: 'Especialista em Transformação Digital e Otimização de Processos. Consultoria em gestão de projetos, automação e IA aplicada ao negócio.',
   url: siteUrl,
   email: 'contato@aldosantos.com',
   telephone: '+351932786582',
   areaServed: ['BR', 'PT'],
   serviceType: [
-    'Consultoria de TI',
+    'Transformação Digital',
+    'Otimização de Processos',
     'Gestão de Projetos',
     'PMO as a Service',
-    'Arquitetura de Soluções IA',
-    'Engenharia de Software',
-    'Otimização de Processos',
+    'Consultoria em Engenharia de Software',
+    'Automação com IA',
   ],
   founder: {
     '@type': 'Person',
     name: 'Aldo Santos',
-    jobTitle: 'Consultor de TI & Gestão de Projetos',
+    jobTitle: 'Especialista em Transformação Digital & Otimização de Processos',
     url: siteUrl,
   },
 }
@@ -97,11 +100,11 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <Header />
+        <HeaderV2 />
         <main className="min-h-screen">
           {children}
         </main>
-        <Footer />
+        <FooterV2 />
       </body>
     </html>
   )
