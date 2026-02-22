@@ -285,26 +285,26 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">CLIENTES ATENDIDOS</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
-              Operações que não podem parar. Empresas que só crescem.
+              Operações que não podem parar. Empresas que só crescem
             </h2>
             <p className="text-slate-600">
               Projetos entregues para algumas das maiores operações do Brasil — com consistência, prazo e resultado
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-3 md:gap-4">
             {logos.map((company) => (
               <div
                 key={company.name}
                 className="bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex items-center justify-center aspect-square transition-all hover:shadow-md hover:border-blue-100 group"
               >
-                <div className="relative w-full h-full flex items-center justify-center grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
+                <div className="relative w-full h-full flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500">
                   <Image
                     src={company.logo}
                     alt={company.name}
                     width={company.w}
                     height={company.h}
-                    className={`max-w-full object-contain filter ${'maxH' in company ? company.maxH : 'max-h-12'}`}
+                    className="max-w-[70%] max-h-[70%] object-contain"
                   />
                 </div>
               </div>

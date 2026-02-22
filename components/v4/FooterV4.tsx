@@ -62,7 +62,7 @@ export default function FooterV4() {
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-slate-800 flex flex-col items-center">
-                    <p className="text-xs font-medium text-slate-500">
+                    <p className="text-xs font-medium text-slate-500" suppressHydrationWarning>
                         © {new Date().getFullYear()} Aldo Santos. Todos os direitos reservados.
                     </p>
                 </div>
