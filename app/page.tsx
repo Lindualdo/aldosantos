@@ -180,12 +180,12 @@ export default function Home() {
       <section className="py-24 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Como eu posso ajudar a resolver o seu problema</h3>
+            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Como eu posso ajudar a otimizar a sua operação</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
               A teoria aceita tudo, o campo de batalha não.
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Após mais de 20 anos evoluindo no campo de batalha, aprendi a transformar operações que sangravam dinheiro em máquinas eficientes — menos retrabalho, mais margem, clientes mais satisfeitos.
+              Após mais de 20 anos liderando no campo de batalha, aprendi a transformar operações que sangravam dinheiro em máquinas eficientes — menos retrabalho, mais margem, clientes mais satisfeitos.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">Resultados que aparecem no financeiro</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
-              Operações que liderei nos últimos anos
+              Operações que liderei nos últimos anos nas maiores empresas do setor elétrico
             </h2>
             <p className="text-slate-400">
               Números que o seu CFO vai querer ver.
