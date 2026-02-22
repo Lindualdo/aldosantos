@@ -22,24 +22,32 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative bg-slate-900 border-b border-slate-800 overflow-hidden">
+      <section className="relative bg-slate-900 border-b border-slate-800 overflow-hidden min-h-[92vh] flex items-center">
+        {/* Background glow */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-blue-600/10 blur-[120px]" />
           <div className="absolute top-[60%] -left-[10%] w-[40%] h-[40%] rounded-full bg-slate-400/5 blur-[100px]" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 lg:pt-20 lg:pb-32 relative z-10">
-          <div className="max-w-4xl">
+        {/* Two-column layout */}
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10 py-16 lg:py-20 lg:flex lg:items-center">
+
+          {/* LEFT: Text */}
+          <div className="max-w-2xl lg:w-1/2 lg:pr-12 relative z-20">
             <h2 className="text-blue-500 font-semibold tracking-widest text-sm uppercase mb-6 flex items-center gap-4">
               Delivery | Operações (AMS) | Transformação Digital
             </h2>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-8">
-              Processos otimizados podem salvar até 42% do seu custo operacional <br />
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15] mb-6">
+              Processos otimizados podem{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">salvar</span>{' '}
+              até{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">42%</span>{' '}
+              do seu custo operacional <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Vamos construir isso juntos?</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-2xl font-light">
+            <p className="text-base md:text-lg text-slate-300 leading-relaxed mb-10 font-light max-w-xl">
               Simplificação e automação de processos para escalar sua operação, reduzir custos invisíveis e devolver a previsibilidade que a sua empresa exige.
             </p>
 
@@ -60,8 +68,29 @@ export default function Home() {
               </a>
             </div>
           </div>
+
+          {/* RIGHT: Photo */}
+          <div className="lg:absolute lg:top-0 lg:bottom-0 lg:right-0 lg:w-1/2 h-[400px] sm:h-[500px] lg:h-auto w-[calc(100%+3rem)] -mx-6 lg:mx-0 relative mt-12 lg:mt-0 overflow-hidden">
+            <Image
+              src="/images/aldo-hero.jpg"
+              alt="Aldo Santos — Consultor Executivo em Transformação Digital"
+              fill
+              className="object-cover object-top"
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+
+            {/* Desktop Gradient Overlay: Left side fade to blend with dark bg */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/40 to-transparent hidden lg:block" />
+
+            {/* Mobile Gradient Overlay: Top and Bottom fade */}
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-slate-900 hidden sm:block lg:hidden" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-slate-900 block sm:hidden" />
+          </div>
+
         </div>
       </section>
+
 
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
