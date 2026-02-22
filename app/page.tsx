@@ -192,7 +192,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {/* Passo 01 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-slate-200 absolute top-0 left-0 group-hover:bg-blue-300 transition-colors" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">01. Diagnóstico e Priorização</h4>
               </div>
@@ -201,7 +201,7 @@ export default function Home() {
 
             {/* Passo 02 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-slate-300 absolute top-0 left-0 group-hover:bg-blue-400 transition-colors" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">02. Simplificação e Redesenho do Processo</h4>
               </div>
@@ -210,7 +210,7 @@ export default function Home() {
 
             {/* Passo 03 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-400 absolute top-0 left-0 group-hover:bg-blue-500 transition-colors" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">03. Piloto e Automação AI</h4>
               </div>
@@ -219,7 +219,7 @@ export default function Home() {
 
             {/* Passo 04 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-500 absolute top-0 left-0 group-hover:bg-blue-600 transition-colors" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">04. Rollout em Produção</h4>
               </div>
@@ -228,7 +228,7 @@ export default function Home() {
 
             {/* Passo 05 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 group-hover:bg-blue-700 transition-colors" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">05. Treinamento e Operação</h4>
               </div>
