@@ -31,17 +31,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-24 lg:pt-20 lg:pb-32 relative z-10">
           <div className="max-w-4xl">
             <h2 className="text-blue-500 font-semibold tracking-widest text-sm uppercase mb-6 flex items-center gap-4">
-
-              Delivery/Operações (AMS) | Transformação Digital
+              Delivery | Operações (AMS) | Transformação Digital
             </h2>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-8">
-              Processos falhos custam até 42% do seu orçamento operacional. <br />
-              <span className="text-slate-400">Vamos resolver isso juntos?</span>
+              Processos otimizados podem salvar até 42% do seu custo operacional <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Vamos construir isso juntos?</span>
             </h1>
 
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed mb-12 max-w-2xl font-light">
-              Simplificação e automação de processos para escalar sua operação, reduzir custos invisíveis e devolver a previsibilidade que a sua diretoria exige.
+              Simplificação e automação de processos para escalar sua operação, reduzir custos invisíveis e devolver a previsibilidade que a sua empresa exige.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-5">
@@ -76,7 +75,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Camada 1 */}
             <div className="p-8 pb-10 rounded-2xl bg-slate-50 border border-slate-100 relative group transition-colors hover:border-slate-300 shadow-sm">
               <div className="text-red-500 mb-6">
@@ -133,11 +132,11 @@ export default function Home() {
               <ul className="space-y-3 relative z-10">
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Sênior sai levando a inteligência técnica com ele</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Cliente precisando reexplicar seu negócio a cada troca de equipe</li>
-                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Novos analistas travados no onboarding sem base</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Novos analistas travados no onboarding sem base de conhecimento</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Dúvidas repetitivas estrangulam arquitetos seniores</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Técnicos caros que acabam deslocados para suporte em pré-vendas</li>
                 <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> O mesmo erro sistêmico ocorre novamente meses depois</li>
-                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Regras, LGPD e compliance espalhados num inferno de planilhas</li>
+                <li className="flex gap-3 text-slate-600 text-sm font-medium"><span className="text-red-600 font-bold shrink-0">→</span> Regras, LGPD, processos e compliance espalhados em pastas, planilhas e sistemas</li>
               </ul>
             </div>
 
@@ -181,19 +180,19 @@ export default function Home() {
       <section className="py-24 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
-            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Como eu posso resolver o seu problema</h3>
+            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase mb-3">Como eu posso ajudar a resolver o seu problema</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-6">
               A teoria aceita tudo, o campo de batalha não.
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Após mais de 20 anos sofrendo e evoluindo no campo de batalha, aprendi a transformar operações que sangravam dinheiro em máquinas eficientes — menos retrabalho, mais margem, clientes mais satisfeitos.
+              Após mais de 20 anos evoluindo no campo de batalha, aprendi a transformar operações que sangravam dinheiro em máquinas eficientes — menos retrabalho, mais margem, clientes mais satisfeitos.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
             {/* Passo 01 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="w-full h-1 bg-slate-200 absolute top-0 left-0 group-hover:bg-blue-300 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">01. Diagnóstico e Priorização</h4>
               </div>
@@ -202,7 +201,7 @@ export default function Home() {
 
             {/* Passo 02 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="w-full h-1 bg-slate-300 absolute top-0 left-0 group-hover:bg-blue-400 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">02. Simplificação e Redesenho do Processo</h4>
               </div>
@@ -211,7 +210,7 @@ export default function Home() {
 
             {/* Passo 03 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="w-full h-1 bg-blue-400 absolute top-0 left-0 group-hover:bg-blue-500 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">03. Piloto e Automação AI</h4>
               </div>
@@ -220,7 +219,7 @@ export default function Home() {
 
             {/* Passo 04 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="w-full h-1 bg-blue-500 absolute top-0 left-0 group-hover:bg-blue-600 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">04. Rollout em Produção</h4>
               </div>
@@ -229,11 +228,11 @@ export default function Home() {
 
             {/* Passo 05 */}
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full min-h-[260px] relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
-              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0" />
+              <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 group-hover:bg-blue-700 transition-colors" />
               <div className="min-h-[4rem] mb-4 pt-2">
                 <h4 className="font-bold text-slate-900 tracking-tight text-xl">05. Treinamento e Operação</h4>
               </div>
-              <p className="text-slate-600 text-sm leading-relaxed">Eu saio, a operação autônoma fica. A equipe é treinada, e deixo um Chatbot Inteligente com base de conhecimento sobre o processo para dar suporte em tempo integral</p>
+              <p className="text-slate-600 text-sm leading-relaxed">Eu saio, a operação autônoma fica. A equipe é treinada, e deixo um Chatbot Inteligente com base de conhecimento sobre cada processo para dar suporte em tempo integral</p>
             </div>
           </div>
         </div>
@@ -243,7 +242,7 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">Resultados que aparecem no financeiro</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
-              Operações reais, nas maiores distribuidoras de energia do Brasil
+              Operações que liderei nos últimos anos
             </h2>
             <p className="text-slate-400">
               Números que o seu CFO vai querer ver.
@@ -284,12 +283,12 @@ export default function Home() {
       <section className="py-24 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">Prova Social</h3>
+            <h3 className="text-sm font-bold tracking-widest text-blue-500 uppercase mb-3">CLIENTES ATENDIDOS</h3>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
-              Empresas que Confiam
+              Operações que não podem parar. Empresas que só crescem.
             </h2>
             <p className="text-slate-600">
-              Projetos de transformação entregues para líderes de mercado em diversos setores
+              Projetos entregues para algumas das maiores operações do Brasil — com consistência, prazo e resultado
             </p>
           </div>
 
