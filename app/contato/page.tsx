@@ -189,7 +189,7 @@ export default function Contato() {
                 <div className="pt-8 border-t border-slate-100">
                   <div className="bg-slate-900 rounded-2xl p-8 relative overflow-hidden">
                     <div className="absolute -top-4 -right-4 w-24 h-24 bg-emerald-500/20 rounded-full blur-2xl pointer-events-none"></div>
-                    <h4 className="text-lg font-bold text-white mb-2">Agilidade Corporativa</h4>
+                    <h4 className="text-lg font-bold text-white mb-2">Agilidade</h4>
                     <p className="text-slate-400 text-sm mb-6 leading-relaxed">
                       Para respostas imeditas, utilize meu contato no WhatsApp.
                     </p>
