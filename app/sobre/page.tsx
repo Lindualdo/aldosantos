@@ -138,35 +138,7 @@ export default function Sobre() {
         </div>
       </section>
 
-      {/* LinkedIn CTA */}
-      <section className="py-24 px-6 lg:px-8 bg-slate-50 text-center">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Histórico Completo</h2>
-          <p className="text-slate-600 mb-10 leading-relaxed font-light">
-            Iniciei miha carreira como programador por hobie e ainda é minha paixão. Evolui em gestão e empreendedorismo como processo natural de minha careira e tenho estado na vanguarda das mudanças do mercado de TI com o mesmo brilho nos olhos de quando comecei. E após mais de 20 anos de mercado, hoje entendo a importancia das pessoas além das tecnologias. Processos, ferramentas e tecnologias de ponta, não substitue o talento e a capacidade de entrega das pessoas e equipes. Entender isso e saber potencializar o que cada um tem de melhor é o que faz a diferença em si, é o que faz a difernça em uma liderança eficiente e de alta performance.
-          </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://www.linkedin.com/in/lindualdo/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20"
-            >
-              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-              </svg>
-              Ler Perfil no LinkedIn
-            </Link>
-            <Link
-              href="/contato"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 border border-slate-200 font-bold rounded-xl hover:border-slate-300 hover:bg-slate-50 transition-colors shadow-sm"
-            >
-              Falar sobre um Projeto
-            </Link>
-          </div>
-        </div>
-      </section>
 
     </div>
   )
