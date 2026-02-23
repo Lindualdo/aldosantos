@@ -34,15 +34,15 @@ export default function Sobre() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full py-16 lg:py-24">
             <div className="max-w-2xl lg:w-[55%] lg:pr-12">
               <h2 className="text-blue-500 font-semibold tracking-widest text-sm uppercase mb-6 flex items-center gap-4">
-                A Ponte entre Negócio e Engenharia
+                Sobre Aldo Santos
               </h2>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15] mb-6">
-                20 anos conduzindo mudanças que geram resultado no P&L.
+                A ponte definitiva entre os objetivos do C-level e a realidade da entrega técnica.
               </h1>
 
               <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed">
-                Sou a ponte definitiva entre as expectativas do C-level e a realidade da execução técnica — eliminando o desgaste operacional no meio do caminho.
+                20 anos de experiência combinando a gestão de operações em larga escala com a capacidade técnica hands-on para otimizar processos e gerar resultado financeiro mensurável.
               </p>
             </div>
           </div>
@@ -54,20 +54,51 @@ export default function Sobre() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="prose prose-lg prose-slate max-w-none">
 
-            <h3 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Uma anomalia de mercado: Visão B2B e Mão na Massa</h3>
-            <p className="text-slate-600 mb-8 leading-relaxed font-light">
-              Minha atuação combina três competências que raramente coexistem no mesmo profissional: a cadência de <strong>gestão de projetos em larga escala</strong>, a visão cirúrgica de um <strong>analista de negócios</strong>, e a <strong>capacidade técnica raiz (hands-on)</strong> para implantar automações inteligentes.
-            </p>
-            <p className="text-slate-600 mb-12 leading-relaxed font-light">
-              Não sou o consultor que deixa um belo PowerPoint na sua mesa e vai embora. Eu entro na operação, diagnostico os ralos por onde o seu faturamento escorre, redesenho os gargalos, orquestro o time (ou trago a IA para substituir o braçal) e gerencio a entrega até que o resultado final apareça como margem líquida.
+            <p className="text-xl text-slate-700 leading-relaxed font-medium mb-6 mt-4">
+              Especialista em Transformação Digital e Otimização de Processos com 20+ anos conduzindo mudanças que geram resultado financeiro mensurável.
             </p>
 
-            <h3 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">O Movimento Europa: Maturidade e Ambição Global</h3>
-            <p className="text-slate-600 mb-8 leading-relaxed font-light">
-              Após duas décadas controlando carteiras de mais de <strong>R$ 12 Milhões/ano</strong> e liderando exércitos de profissionais de tech no Brasil, decidi que era hora de elevar a régua do meu impacto. Em 2024, cruzei o oceano e me estabeleci em Portugal.
+            <p className="text-slate-600 mb-6 leading-relaxed font-light">
+              Minha atuação combina três competências que raramente coexistem no mesmo profissional: gestão de projetos e operações em larga escala, análise de negócios com visão estratégica e capacidade técnica hands-on para implementar soluções — incluindo automação e IA aplicada.
             </p>
+
             <p className="text-slate-600 mb-12 leading-relaxed font-light">
-              Essa migração não é apenas uma mudança de fuso horário. É um posicionamento estratégico de quem tem fome de crescer. Atuando como consultor independente no eixo Brasil-Europa, consolidei uma postura livre de amarras corporativas: atendo líderes que precisam de urgência para salvar suas operações, aplicando padrões internacionais de eficiência operando em modelo 100% autônomo.
+              Sou a ponte entre C-level e times técnicos. Entro na operação, identifico gargalos, redesenho processos e lidero a implementação até o resultado aparecer na Demostração de Resultados.
+            </p>
+
+            {/* Grid for Results and Delivery Methods */}
+            <div className="grid md:grid-cols-2 gap-8 mb-6 not-prose">
+              {/* Resultados */}
+              <div className="bg-slate-50 border border-slate-200 p-8 rounded-2xl">
+                <h3 className="text-blue-600 font-bold text-sm tracking-widest uppercase mb-6">Resultados que ilustram minha atuação</h3>
+                <ul className="space-y-4 text-slate-700 text-sm">
+                  <li className="flex gap-3"><span className="text-blue-500 font-bold">→</span> Operação de R$ 12M+/ano para 6 das maiores distribuidoras de energia do Brasil</li>
+                  <li className="flex gap-3"><span className="text-blue-500 font-bold">→</span> +43% de aumento de margem | –53% no volume de chamados | 100% de SLA</li>
+                  <li className="flex gap-3"><span className="text-blue-500 font-bold">→</span> –32% de custos operacionais com automação e redesenho de processos</li>
+                  <li className="flex gap-3"><span className="text-blue-500 font-bold">→</span> 50+ profissionais sob gestão direta e indireta</li>
+                </ul>
+              </div>
+
+              {/* Como Entrego */}
+              <div className="bg-slate-900 border border-slate-800 p-8 rounded-2xl">
+                <h3 className="text-slate-400 font-bold text-sm tracking-widest uppercase mb-6">Como entrego transformação</h3>
+                <ul className="space-y-4 text-slate-300 text-sm">
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Diagnóstico de processos e identificação de gargalos operacionais</li>
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Gestão de Projetos e Operações de TI (AMS, PMO, delivery end-to-end)</li>
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Análise de Negócios e Product Ownership (requisitos, roadmap, backlog)</li>
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Redesenho e automação de processos com IA</li>
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Pré-venda e desenho de soluções técnico-comerciais</li>
+                  <li className="flex gap-3"><span className="text-cyan-400 font-bold">→</span> Estruturação e melhoria contínua (PMI, Scrum, Kanban, ITIL)</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-slate-600 font-bold text-sm uppercase tracking-widest mt-8 mb-10">
+              <span className="text-slate-400 mr-2">Setores:</span> Energia, Financeiro, Saúde, Logística, Varejo, Tecnologia
+            </p>
+
+            <p className="text-slate-600 mb-4 leading-relaxed font-light">
+              Em 2024 mudei para Portugal onde atuo como consultor independente em transformação digital. Disponível para projetos de médio e longo prazo em modelo remoto (PJ) para empresas no Brasil e em Portugal.
             </p>
 
           </div>
@@ -84,7 +115,7 @@ export default function Sobre() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://www.linkedin.com/in/aldosantos/"
+              href="https://www.linkedin.com/in/lindualdo/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20"
