@@ -46,33 +46,16 @@ export default function Contato() {
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-slate-900 border-b border-slate-800 py-20 lg:py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-blue-500 font-semibold tracking-widest text-sm uppercase mb-4 flex items-center gap-4">
-              <span className="w-8 h-[2px] bg-blue-500"></span>
-              Contato Direto
-            </h2>
-            <h1 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-6">
-              Vamos conversar sobre o P&L da sua operação.
-            </h1>
-            <p className="text-lg md:text-xl text-slate-400 font-light max-w-2xl">
-              Deixe uma mensagem ou me chame no WhatsApp para agendarmos o diagnóstico inicial da sua operação.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Contact Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-16 lg:py-24 bg-white relative">
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-slate-50 border-b border-slate-100 pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
 
             {/* Contact Form */}
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-10">
-                <h2 className="text-2xl font-bold text-slate-900 mb-8 tracking-tight">Envie uma Mensagem</h2>
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 p-8 md:p-10">
+                <h3 className="text-2xl font-bold text-slate-900 mb-8 tracking-tight">Envie uma Mensagem</h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">

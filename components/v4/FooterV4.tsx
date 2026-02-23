@@ -11,10 +11,10 @@ export default function FooterV4() {
                             Aldo Santos
                         </h3>
                         <p className="text-sm font-medium tracking-widest text-slate-500 uppercase mb-6">
-                            Consultor Executivo
+                            Consultor Executivo - TI
                         </p>
                         <p className="text-sm leading-relaxed text-slate-400">
-                            Transformação Digital & Melhoria de Processos operacionais para médias e grandes corporações.
+                            Gestão de Projetos | Operações | Transf. Digital
                         </p>
                     </div>
 
@@ -23,7 +23,7 @@ export default function FooterV4() {
                         <ul className="space-y-4 text-sm font-medium">
                             <li>
                                 <Link href="/#atuacao" className="hover:text-white transition-colors">
-                                    Modelos de Atuação
+                                    Serviços
                                 </Link>
                             </li>
                             <li>

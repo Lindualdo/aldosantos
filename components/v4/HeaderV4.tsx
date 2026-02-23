@@ -13,14 +13,14 @@ export default function HeaderV4() {
                     <Link href="/" className="text-2xl font-bold text-slate-900 tracking-tight shrink-0">
                         Aldo Santos
                         <span className="block text-[11px] font-medium tracking-widest text-slate-500 uppercase mt-0.5">
-                            Consultor Executivo
+                            Consultor Executivo - TI
                         </span>
                     </Link>
 
                     {/* Desktop Nav */}
                     <div className="hidden lg:flex items-center space-x-10 shrink-0">
                         <Link href="/#atuacao" className="text-sm font-semibold tracking-wide text-slate-600 hover:text-slate-900 transition-colors uppercase">
-                            Atuação
+                            Serviços
                         </Link>
                         <Link href="/sobre" className="text-sm font-semibold tracking-wide text-slate-600 hover:text-slate-900 transition-colors uppercase">
                             Sobre
@@ -52,7 +52,7 @@ export default function HeaderV4() {
                 {mobileMenuOpen && (
                     <div className="lg:hidden py-6 border-t border-gray-100 animate-in slide-in-from-top-4">
                         <Link href="/#atuacao" className="block py-3 text-sm font-semibold tracking-wide text-slate-600 uppercase" onClick={() => setMobileMenuOpen(false)}>
-                            Atuação
+                            Serviços
                         </Link>
                         <Link href="/sobre" className="block py-3 text-sm font-semibold tracking-wide text-slate-600 uppercase" onClick={() => setMobileMenuOpen(false)}>
                             Sobre
