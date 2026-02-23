@@ -47,20 +47,23 @@ export default function Contato() {
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Contact Section */}
-      <section className="py-16 lg:py-24 bg-white relative">
+      <section className="py-8 lg:py-12 bg-white relative">
         <div className="absolute top-0 left-0 w-full h-1/2 bg-slate-50 border-b border-slate-100 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
+
+          <h1 className="sr-only">Contato Direto</h1>
+
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
 
             {/* Contact Form */}
             <div className="lg:col-span-7">
-              <div className="bg-white rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 p-8 md:p-10">
-                <h3 className="text-2xl font-bold text-slate-900 mb-8 tracking-tight">Envie uma Mensagem</h3>
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-xl shadow-slate-200/50 p-6 md:p-8">
+                <h3 className="text-xl font-bold text-slate-900 mb-6 tracking-tight">Envie uma Mensagem</h3>
 
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="grid md:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="nome" className="block text-sm font-semibold text-slate-900 mb-2">
+                      <label htmlFor="nome" className="block text-sm font-semibold text-slate-900 mb-1">
                         Nome Completo
                       </label>
                       <input
@@ -70,13 +73,13 @@ export default function Contato() {
                         value={formState.nome}
                         onChange={handleChange}
                         required
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                         placeholder="Ex: João Silva"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="telefone" className="block text-sm font-semibold text-slate-900 mb-2">
+                      <label htmlFor="telefone" className="block text-sm font-semibold text-slate-900 mb-1">
                         Telefone (opcional)
                       </label>
                       <input
@@ -85,14 +88,14 @@ export default function Contato() {
                         name="telefone"
                         value={formState.telefone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                        className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                         placeholder="+55 11 99999-9999"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-2">
+                    <label htmlFor="email" className="block text-sm font-semibold text-slate-900 mb-1">
                       E-mail Corporativo
                     </label>
                     <input
@@ -102,13 +105,13 @@ export default function Contato() {
                       value={formState.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                      className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
                       placeholder="joao.silva@empresa.com"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="mensagem" className="block text-sm font-semibold text-slate-900 mb-2">
+                    <label htmlFor="mensagem" className="block text-sm font-semibold text-slate-900 mb-1">
                       Qual é o seu desafio atual?
                     </label>
                     <textarea
@@ -117,8 +120,8 @@ export default function Contato() {
                       value={formState.mensagem}
                       onChange={handleChange}
                       required
-                      rows={5}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
+                      rows={3}
+                      className="w-full px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all resize-none"
                       placeholder="Descreva brevemente o gargalo da sua operação..."
                     />
                   </div>
@@ -126,7 +129,7 @@ export default function Contato() {
                   <button
                     type="submit"
                     disabled={submitStatus === 'loading'}
-                    className="w-full inline-flex justify-center items-center px-6 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full inline-flex justify-center items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     {submitStatus === 'loading' ? 'Enviando mensagem...' : 'Enviar Solicitação'}
                   </button>
