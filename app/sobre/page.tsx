@@ -38,11 +38,11 @@ export default function Sobre() {
               </h2>
 
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.15] mb-6">
-                A ponte definitiva entre os objetivos do C-level e a realidade da entrega técnica.
+                Sou a ponte entre os objetivos estratégicos e a realidade da entrega técnica.
               </h1>
 
               <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed">
-                20 anos de experiência combinando a gestão de operações em larga escala com a capacidade técnica hands-on para otimizar processos e gerar resultado financeiro mensurável.
+                20+ anos de experiência combinando a gestão de operações em larga escala com a capacidade técnica hands-on para otimizar processos e gerar resultado financeiro mensurável.
               </p>
             </div>
           </div>
@@ -64,6 +64,54 @@ export default function Sobre() {
               <p>
                 É essa leitura estratégica do fator humano, aliada à visão técnica e de negócio, que sustenta uma liderança consistente, capaz de escalar resultados, formar times fortes e conduzir transformações reais.
               </p>
+            </div>
+
+            {/* Soft Skills Section */}
+            <div className="mt-20 mb-10 not-prose">
+              <div className="text-center max-w-2xl mx-auto mb-12">
+                <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">O Fator Humano</h3>
+                <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
+                  Além do Processo: As Dinâmicas Invisíveis da Execução
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 items-stretch">
+                {/* Skill 1 */}
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+                  <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
+                  <div className="mb-4 pt-2">
+                    <h4 className="font-bold text-slate-900 tracking-tight text-lg mb-2">Tradução Fluida</h4>
+                    <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-md uppercase tracking-wider">Business ↔ Tech</span>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Falo duas línguas nativas: a dos números do negócio e a da arquitetura de sistemas. Minha maior habilidade na mesa é traduzir as metas financeiras da diretoria em decisões técnicas claras, sem ruído e sem retrabalho. Assim, metas deixam de ser slides e viram entregas.
+                  </p>
+                </div>
+
+                {/* Skill 2 */}
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+                  <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
+                  <div className="mb-4 pt-2">
+                    <h4 className="font-bold text-slate-900 tracking-tight text-lg mb-2">Abstração Cirúrgica</h4>
+                    <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-md uppercase tracking-wider">Ordem no Caos</span>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Tenho a facilidade de entrar em uma sala onde tudo parece estar pegando fogo, absorver um volume absurdo de informações desorganizadas e, em minutos, isolar o ruído para encontrar o ponto exato que está travando o resultado
+                  </p>
+                </div>
+
+                {/* Skill 3 */}
+                <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 flex flex-col h-full relative overflow-hidden group hover:border-blue-200 transition-all duration-300 hover:shadow-md">
+                  <div className="w-full h-1 bg-blue-600 absolute top-0 left-0 transition-colors" />
+                  <div className="mb-4 pt-2">
+                    <h4 className="font-bold text-slate-900 tracking-tight text-lg mb-2">Senso de Trincheira</h4>
+                    <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded-md uppercase tracking-wider">Adaptabilidade</span>
+                  </div>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    Ambientes sob pressão e times resistentes à mudança são a regra. Minha flexibilidade para moldar a liderança conforme o clima do projeto, acalma os ânimos e ancora as decisões em fatos operacionais.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
