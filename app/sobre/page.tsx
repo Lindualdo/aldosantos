@@ -54,7 +54,31 @@ export default function Sobre() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="prose prose-lg prose-slate max-w-none">
 
-            <p className="text-xl text-slate-700 leading-relaxed font-medium mb-6 mt-4">
+            <div className="text-xl text-slate-800 leading-relaxed font-normal mb-10 mt-4 px-6 border-l-4 border-blue-500">
+              <p className="mb-4">
+                Comecei a programar por hobby — e essa continua sendo a minha maior paixão. A evolução para gestão e empreendedorismo foi um movimento natural da minha carreira, sempre acompanhando e antecipando as transformações do mercado de TI com o mesmo entusiasmo de quando escrevi minhas primeiras linhas de código.
+              </p>
+              <p className="mb-4">
+                Após mais de 20 anos de experiência, ficou claro para mim que tecnologias, processos e frameworks são aceleradores — mas são as pessoas que realmente entregam resultados. Alta performance nasce de ambientes onde talentos são compreendidos, potencializados e direcionados para um propósito comum.
+              </p>
+              <p>
+                É essa leitura estratégica do fator humano, aliada à visão técnica e de negócio, que sustenta uma liderança consistente, capaz de escalar resultados, formar times fortes e conduzir transformações reais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Narrative Section */}
+      <section className="py-24 bg-slate-50 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="prose prose-lg prose-slate max-w-none">
+
+            <h2 className="text-3xl font-bold text-slate-900 tracking-tight mb-8">
+              Atuação e Impacto Operacional
+            </h2>
+
+            <p className="text-xl text-slate-700 leading-relaxed font-medium mb-6">
               Especialista em Transformação Digital e Otimização de Processos com 20+ anos conduzindo mudanças que geram resultado financeiro mensurável.
             </p>
 
@@ -97,9 +121,18 @@ export default function Sobre() {
               <span className="text-slate-400 mr-2">Setores:</span> Energia, Financeiro, Saúde, Logística, Varejo, Tecnologia
             </p>
 
-            <p className="text-slate-600 mb-4 leading-relaxed font-light">
-              Em 2024 mudei para Portugal onde atuo como consultor independente em transformação digital. Disponível para projetos de médio e longo prazo em modelo remoto (PJ) para empresas no Brasil e em Portugal.
-            </p>
+            {/* O Movimento Europa Card */}
+            <div className="bg-gradient-to-br from-blue-900 to-slate-900 border border-blue-800/50 p-8 md:p-10 rounded-2xl shadow-xl mt-12 not-prose">
+              <h3 className="text-white font-bold text-2xl tracking-tight mb-6">
+                O Movimento Europa: Maturidade e Ambição Global
+              </h3>
+              <p className="text-blue-100/90 leading-relaxed font-light mb-6">
+                Após duas décadas controlando carteiras de mais de R$ 12 Milhões/ano e liderando exércitos de profissionais de tech no Brasil, decidi que era hora de elevar a régua do meu impacto. Em 2024, cruzei o oceano e me estabeleci em Portugal.
+              </p>
+              <p className="text-blue-100/90 leading-relaxed font-light m-0">
+                Essa migração não é apenas uma mudança de fuso horário. É um posicionamento estratégico de quem tem fome de crescer. Atuando como consultor independente no eixo Brasil-Europa, consolidei uma postura livre de amarras corporativas: atendo líderes que precisam de urgência para salvar suas operações, aplicando padrões internacionais de eficiência operando em modelo 100% autônomo.
+              </p>
+            </div>
 
           </div>
         </div>
@@ -110,7 +143,7 @@ export default function Sobre() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">Histórico Completo</h2>
           <p className="text-slate-600 mb-10 leading-relaxed font-light">
-            Geri diretamente projetos imensos para Grupo Imagem, Vincit, Stefanini, CPFL e Neoenergia. Todos os detalhes técnicos, anos e stack funcional estão abertos no meu perfil profissional.
+            Iniciei miha carreira como programador por hobie e ainda é minha paixão. Evolui em gestão e empreendedorismo como processo natural de minha careira e tenho estado na vanguarda das mudanças do mercado de TI com o mesmo brilho nos olhos de quando comecei. E após mais de 20 anos de mercado, hoje entendo a importancia das pessoas além das tecnologias. Processos, ferramentas e tecnologias de ponta, não substitue o talento e a capacidade de entrega das pessoas e equipes. Entender isso e saber potencializar o que cada um tem de melhor é o que faz a diferença em si, é o que faz a difernça em uma liderança eficiente e de alta performance.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
